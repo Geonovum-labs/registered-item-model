@@ -8,16 +8,29 @@ This block represents operational register content rather than the template that
 
 ## Scope
 
-This block introduces:
+This block is the JSON / JSON-LD binding of the following core-ontology terms (defined once, in
+`ogc.model.registered-item.core-ontology`, not redeclared here):
 
 - `rim:RegisterItem`
 - item-level object and functional identifiers
 - `rim:itemClass`
 - `rim:inRegister`
 - `rim:realizes`
+- `rim:validityStatus`, `rim:publicationStatus`, `rim:isRedacted`, `rim:isDeleted`
 - `rim:relatedItem`
 - `rim:supersededBy`
 - `rim:supersedes`
+- `rim:hasAction`
+
+`schema.yaml` requires exactly the ISO 19135:2026 required core -- `objectIdentifier`,
+`itemClass`, `validityStatus`, `publicationStatus` -- and nothing else, so that a sub-register can
+`allOf`-reference it and add its own content properties. `type` is deliberately not pinned to
+`RegisterItem`: a sub-register uses its own type term, declared in its ontology as a sub-class of
+`rim:RegisterItem`, and the base shape then applies to its items through the ontology closure.
+
+Status values are the model's own SKOS concepts: `valid` / `invalid` map to `rim:valid` /
+`rim:invalid`, `published` / `unpublished` to `rim:published` / `rim:unpublished`. A register must
+not mint its own.
 
 ## Conceptual position
 
@@ -37,7 +50,14 @@ Register Item Class
 
 ## SHACL validation
 
-A registered item requires one object identifier, one functional identifier, exactly one item class and exactly one containing register. It may realize a concept version and may be related to or supersede other registered items.
+`rim:RegisterItemShape` (core-ontology `shapes.shacl`): exactly one object identifier
+(`xsd:anyURI` literal), exactly one item class that is a `rim:RegisterItemClass`, exactly one
+validity and one publication status drawn from the model's values; at most one functional
+identifier, one register (a `rim:Register`) and one realised concept version. Related, superseding
+and superseded items must themselves be `rim:RegisterItem`s.
+
+`tests/item-class-untyped-fail.json` is the negative case: it passes the JSON Schema and is
+rejected because its item class is not a declared `rim:RegisterItemClass`.
 
 ## Typical examples
 
