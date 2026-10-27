@@ -8,12 +8,19 @@ This block represents the register itself and the information system on which it
 
 ## Scope
 
-This block introduces:
+This block is the JSON / JSON-LD binding of the following core-ontology terms (defined once, in
+`ogc.model.registered-item.core-ontology`, not redeclared here):
 
 - `rim:Register`
 - `rim:RegisterSystem`
 - register-level object and functional identifiers
 - `rim:runsOn`, linking a register to its supporting system
+- the six governance roles (`rim:registerOwner`, `rim:registerManager`, `rim:controlBody`,
+  `rim:registerSystemManager`, `rim:registerUser`; `rim:proposer` is on actions)
+
+`schema.yaml` lists these as JSON properties; `context.jsonld` maps them onto the ontology. `type`
+is deliberately not pinned to `Register`, so that a sub-register can `allOf`-reference this schema
+while using its own type term (a sub-class of `rim:Register` in its own ontology).
 
 ## Conceptual position
 
@@ -28,11 +35,14 @@ The last two relationships are defined by dependent blocks, keeping this base bl
 
 ## Dependencies
 
-None. This is a foundational block.
+`core-ontology`, which supplies every term and the SHACL shapes.
 
 ## SHACL validation
 
-The shape requires one object identifier, one functional identifier and at least one title. A register may have a description and at most one supporting register system.
+`rim:RegisterShape` (core-ontology `shapes.shacl`): at most one title, at most one object and one
+functional identifier (each an `xsd:anyURI` literal), at most one specification and one register
+system; commitments, if any, must be `rim:Commitment`s. Nothing is required: the ISO 19135:2026
+required core applies to items and concept versions, not to the register node itself.
 
 ## Typical uses
 

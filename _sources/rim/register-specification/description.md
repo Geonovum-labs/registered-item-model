@@ -8,14 +8,14 @@ Separating this block from the Register block keeps the managed container distin
 
 ## Scope
 
-This block introduces:
+This block is the JSON / JSON-LD binding of the following core-ontology terms (defined once, in
+`ogc.model.registered-item.core-ontology`, not redeclared here):
 
 - `rim:RegisterSpecification`
-- `rim:Commitment`
-- `rim:CommitmentCategory`
+- `rim:Commitment` and `rim:commitmentCategory` (values: `rim:accessCommitment`,
+  `rim:persistenceCommitment`, `rim:transparencyCommitment`)
 - `rim:hasSpecification`
 - `rim:hasCommitment`
-- `rim:commitmentCategory`
 - `rim:definesSubstantiveChange`
 
 ## Conceptual position
@@ -35,7 +35,10 @@ The dependency provides `rim:Register`, which is the domain of `rim:hasSpecifica
 
 ## SHACL validation
 
-A register specification must have a title. It may have descriptions, a definition of substantive change and one or more commitments. Each commitment requires a category and a description.
+`rim:RegisterSpecificationShape` and `rim:CommitmentShape` (core-ontology `shapes.shacl`): a
+specification must have exactly one title and may have descriptions and one definition of
+substantive change; each commitment requires one category from the model's scheme and a
+description.
 
 ## Typical content
 

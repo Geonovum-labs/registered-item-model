@@ -8,17 +8,18 @@ Keeping actions separate from registered items avoids embedding process history 
 
 ## Scope
 
-This block introduces:
+This block is the JSON / JSON-LD binding of the following core-ontology terms (defined once, in
+`ogc.model.registered-item.core-ontology`, not redeclared here):
 
-- `rim:RegisterAction`
-- `rim:RegisterActionType`
-- `rim:ChangeClassification`
-- `rim:actionType`
-- `rim:changeClassification`
+- `rim:RegisterAction` (a `prov:Activity`)
+- `rim:actionType` (values: the model's `rim:additionAction` ... `rim:deletionAction`)
+- `rim:changeClassification` (values: `rim:substantiveChange`, `rim:clarifyingChange`,
+  `rim:correctionalChange`)
 - `rim:appliesTo`
 - `rim:hasAction`
+- `rim:proposer`
 
-It also uses `prov:startedAtTime` for action timing.
+It also uses `prov:startedAtTime` / `prov:endedAtTime` for action timing.
 
 ## Conceptual position
 
@@ -37,7 +38,9 @@ Registered Item
 
 ## SHACL validation
 
-A register action requires exactly one action type and exactly one target registered item. It may have one change classification and one start time.
+`rim:RegisterActionShape` (core-ontology `shapes.shacl`): exactly one action type from the model's
+scheme; at most one change classification, one target item (a `rim:RegisterItem`) and one start
+time.
 
 ## Typical examples
 
