@@ -8,20 +8,24 @@ The distinction is comparable to a class and its instances: the Register Item Cl
 
 ## Scope
 
-This block introduces:
+This block is the JSON / JSON-LD binding of the following core-ontology terms (defined once, in
+`ogc.model.registered-item.core-ontology`, not redeclared here):
 
 - `rim:RegisterItemClass`
 - class-level object and functional identifiers
 - `rim:definedIn`
-- `rim:realizes`
 - `rim:validatedBy`
+
+`rim:realizes` is **not** a property of an item class: its domain is `rim:RegisterItem` and its range
+`rim:ConceptVersion`. Whether an item class should relate to a concept of its own is an open
+question for the model; until it is settled no such property is offered here.
 
 ## Conceptual position
 
 ```text
-Concept
-  `-- realized as --> Register Item Class
-                         `-- instantiated by --> Register Items
+Register
+  `-- definedIn (inverse) --> Register Item Class
+                                 `-- instantiated by --> Register Items
 ```
 
 ## Dependencies
@@ -33,7 +37,9 @@ These dependencies provide the containing register and the concept-plane terms r
 
 ## SHACL validation
 
-A Register Item Class requires one object identifier, one functional identifier, at least one title, exactly one containing register and at least one validation resource. It may realize a concept.
+`rim:RegisterItemClassShape` (core-ontology `shapes.shacl`): exactly one title; at most one object
+and one functional identifier (`xsd:anyURI` literals), at most one defining register, which must be
+a `rim:Register`. `validatedBy` is unconstrained in form (an IRI naming the rule set).
 
 ## Typical examples
 
