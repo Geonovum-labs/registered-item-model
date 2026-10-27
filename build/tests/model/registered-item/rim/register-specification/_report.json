@@ -2,18 +2,18 @@
   "title": "Validation report for ogc.model.registered-item.rim.register-specification - Register Specification",
   "bblockName": "Register Specification",
   "bblockId": "ogc.model.registered-item.rim.register-specification",
-  "generated": "2026-10-23T15:42:24.686363+00:00",
+  "generated": "2026-10-27T12:53:58.529046+00:00",
   "result": true,
   "items": [
     {
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "build/tests/model/registered-item/rim/register-specification/example_1_1.ttl",
-        "url": "https://nielshoffmann.github.io/registered-item-model/build/tests/model/registered-item/rim/register-specification/example_1_1.ttl",
+        "filename": "build/tests/model/registered-item/rim/register-specification/example_1_1.json",
+        "url": "https://nielshoffmann.github.io/registered-item-model/build/tests/model/registered-item/rim/register-specification/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
-        "language": "text/turtle"
+        "language": "application/json"
       },
       "result": true,
       "sections": [
@@ -23,15 +23,38 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using examples/example.ttl from examples"
+              "message": "Using example_1_1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_1_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_1_1.jsonld created"
             },
             {
               "op": "ttl-create",
               "empty": false,
               "filename": "example_1_1.ttl",
-              "size": 4,
+              "size": 11,
               "isError": false,
               "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
             }
           ]
         },
@@ -41,7 +64,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - /github/workspace/_sources/rim/register-specification/ontology.ttl\n - /github/workspace/_sources/rim/register/ontology.ttl\n - /github/workspace/_sources/core-ontology/ontology.ttl"
+              "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - /github/workspace/_sources/core-ontology/ontology.ttl"
             },
             {
               "op": "shacl-report",
@@ -53,19 +76,12 @@
             {
               "shaclFile": "_sources/core-ontology/shapes.shacl",
               "focusNodes": {
-                "rim:ConceptShape": {
-                  "nodes": []
+                "rim:RegisterSpecificationShape": {
+                  "nodes": [
+                    "ex:s"
+                  ]
                 },
-                "rim:ConceptVersionShape": {
-                  "nodes": []
-                },
-                "rim:CommitmentShape": {
-                  "nodes": []
-                },
-                "rim:RegisterItemClassShape": {
-                  "nodes": []
-                },
-                "rim:RegisterItemShape": {
+                "rim:TextShape": {
                   "nodes": []
                 },
                 "rim:RegisterActionShape": {
@@ -74,7 +90,119 @@
                 "rim:TextShape/sh:or/rdf:first": {
                   "nodes": []
                 },
+                "rim:RegisterItemShape": {
+                  "nodes": []
+                },
+                "rim:CommitmentShape": {
+                  "nodes": [
+                    "ex:s/rim:hasCommitment",
+                    "ex:s/rim:hasCommitment"
+                  ]
+                },
+                "rim:ConceptShape": {
+                  "nodes": []
+                },
+                "rim:RegisterShape": {
+                  "nodes": []
+                },
                 "rim:TextShape/sh:or/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "rim:ConceptVersionShape": {
+                  "nodes": []
+                },
+                "rim:RegisterItemClassShape": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: ex:s\n - Shape rim:TextShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:CommitmentShape: ex:s/rim:hasCommitment,ex:s/rim:hasCommitment\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:ConceptVersionShape: *none*\n - Shape rim:RegisterItemClassShape: *none*\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/model/registered-item/rim/register-specification/example_2_1.ttl",
+        "url": "https://nielshoffmann.github.io/registered-item-model/build/tests/model/registered-item/rim/register-specification/example_2_1.ttl",
+        "exampleIndex": 2,
+        "snippetIndex": 1,
+        "language": "text/turtle"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_2_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_2_1.ttl",
+              "size": 9,
+              "isError": false,
+              "message": "Output Turtle example_2_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Prefixes are defined for rim, dct, ex"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - /github/workspace/_sources/core-ontology/ontology.ttl"
+            },
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/core-ontology/shapes.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/core-ontology/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/core-ontology/shapes.shacl",
+              "focusNodes": {
+                "rim:RegisterSpecificationShape": {
+                  "nodes": [
+                    "ex:s"
+                  ]
+                },
+                "rim:TextShape": {
+                  "nodes": []
+                },
+                "rim:RegisterActionShape": {
+                  "nodes": []
+                },
+                "rim:TextShape/sh:or/rdf:first": {
+                  "nodes": []
+                },
+                "rim:RegisterItemShape": {
+                  "nodes": []
+                },
+                "rim:CommitmentShape": {
+                  "nodes": [
+                    "ex:s/rim:hasCommitment"
+                  ]
+                },
+                "rim:ConceptShape": {
                   "nodes": []
                 },
                 "rim:RegisterShape": {
@@ -82,17 +210,18 @@
                     "ex:r"
                   ]
                 },
-                "rim:TextShape": {
+                "rim:TextShape/sh:or/rdf:rest/rdf:first": {
                   "nodes": []
                 },
-                "rim:RegisterSpecificationShape": {
-                  "nodes": [
-                    "ex:s"
-                  ]
+                "rim:ConceptVersionShape": {
+                  "nodes": []
+                },
+                "rim:RegisterItemClassShape": {
+                  "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:ConceptShape: *none*\n - Shape rim:ConceptVersionShape: *none*\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterItemClassShape: *none*\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterShape: ex:r\n - Shape rim:TextShape: *none*\n - Shape rim:RegisterSpecificationShape: ex:s\n"
+              "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: ex:s\n - Shape rim:TextShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:CommitmentShape: ex:s/rim:hasCommitment\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterShape: ex:r\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:ConceptVersionShape: *none*\n - Shape rim:RegisterItemClassShape: *none*\n"
             }
           ]
         }
@@ -101,8 +230,8 @@
   ],
   "globalErrors": {},
   "counts": {
-    "total": 1,
-    "passed": 1,
+    "total": 2,
+    "passed": 2,
     "failed": 0
   }
 }

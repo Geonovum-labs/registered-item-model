@@ -85,7 +85,7 @@ rim:deletionAction a skos:Concept,
 rim:functionalIdentifier a owl:DatatypeProperty ;
     rdfs:label "functional identifier" ;
     rdfs:comment "A redirectable identifier: what it resolves to may change over time so that it continues to serve its original intent, for example \"the current version of this concept\"." ;
-    rdfs:domain [ owl:unionOf ( rim:RegisterItem rim:ConceptVersion ) ] ;
+    rdfs:domain [ owl:unionOf ( rim:Register rim:RegisterItemClass rim:RegisterItem rim:ConceptVersion ) ] ;
     rdfs:isDefinedBy rim: ;
     rdfs:range xsd:anyURI .
 
@@ -153,7 +153,7 @@ rim:itemClass a owl:ObjectProperty ;
 rim:objectIdentifier a owl:DatatypeProperty ;
     rdfs:label "object identifier" ;
     rdfs:comment "An identifier permanently bound to one object; it never redirects and never comes to refer to something else." ;
-    rdfs:domain [ owl:unionOf ( rim:RegisterItem rim:ConceptVersion ) ] ;
+    rdfs:domain [ owl:unionOf ( rim:Register rim:RegisterItemClass rim:RegisterItem rim:ConceptVersion ) ] ;
     rdfs:isDefinedBy rim: ;
     rdfs:range xsd:anyURI .
 
@@ -295,6 +295,13 @@ rim:validityStatus a owl:ObjectProperty ;
     rdfs:isDefinedBy rim: ;
     rdfs:range rim:ValidityStatus .
 
+rim:version a owl:DatatypeProperty ;
+    rdfs:label "version" ;
+    rdfs:comment "The version designation of a concept version, as the register's own versioning scheme (documented in its register specification) writes it." ;
+    rdfs:domain rim:ConceptVersion ;
+    rdfs:isDefinedBy rim: ;
+    rdfs:range xsd:string .
+
 rim:versionOf a owl:ObjectProperty ;
     rdfs:label "version of" ;
     rdfs:domain rim:ConceptVersion ;
@@ -365,11 +372,6 @@ rim:PublicationStatus a owl:Class ;
     rdfs:isDefinedBy rim: ;
     rdfs:subClassOf skos:Concept .
 
-rim:RegisterItemClass a owl:Class ;
-    rdfs:label "Register item class" ;
-    rdfs:comment "A defined abstraction of a set of register items sharing common characteristics. Carries the data requirements for those items; this is the unit that validation rules attach to." ;
-    rdfs:isDefinedBy rim: .
-
 rim:ValidityStatus a owl:Class ;
     rdfs:label "Validity status" ;
     rdfs:comment "Whether a register item or concept version is currently valid or invalid. Required." ;
@@ -394,20 +396,25 @@ rim:RegisterAction a owl:Class ;
     rdfs:isDefinedBy rim: ;
     rdfs:subClassOf prov:Activity .
 
+rim:RegisterItemClass a owl:Class ;
+    rdfs:label "Register item class" ;
+    rdfs:comment "A defined abstraction of a set of register items sharing common characteristics. Carries the data requirements for those items; this is the unit that validation rules attach to." ;
+    rdfs:isDefinedBy rim: .
+
 rim:RegisterActionTypeScheme a skos:ConceptScheme ;
     rdfs:comment "The defined ways register content changes (ISO 19135:2026 §4). Extensible: a register may define further action types in its register specification." ;
     skos:prefLabel "Register action type"@en .
-
-rim:ConceptVersion a owl:Class ;
-    rdfs:label "Concept version" ;
-    rdfs:comment "A version of a concept. Concept versions, not concepts themselves, carry validity and publication status: a concept's meaning can be stable while a particular version of it is superseded." ;
-    rdfs:isDefinedBy rim: .
 
 rim:RegisterActionType a owl:Class ;
     rdfs:label "Register action type" ;
     rdfs:comment "The kind of change a register action makes: addition, publication, unpublication, invalidation, supersession, redaction or deletion. Extensible; a register may define further action types." ;
     rdfs:isDefinedBy rim: ;
     rdfs:subClassOf skos:Concept .
+
+rim:ConceptVersion a owl:Class ;
+    rdfs:label "Concept version" ;
+    rdfs:comment "A version of a concept. Concept versions, not concepts themselves, carry validity and publication status: a concept's meaning can be stable while a particular version of it is superseded." ;
+    rdfs:isDefinedBy rim: .
 
 rim:Register a owl:Class ;
     rdfs:label "Register" ;

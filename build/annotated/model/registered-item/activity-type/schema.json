@@ -37,6 +37,6 @@
     "itemIdentifier": "ogc.model.registered-item.activity-type",
     "register": "https://nielshoffmann.github.io/registered-item-model/build/register.json",
     "version": "0.3",
-    "dateOfLastChange": "2026-10-23"
+    "dateOfLastChange": "2026-10-27"
   }
 }

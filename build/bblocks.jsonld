@@ -213,12 +213,12 @@
   "name": "Building Blocks - Registered Item Model",
   "abstract": "A base RDF and SHACL model for register items, register item classes and register\ngovernance metadata, aligned with ISO 19135:2026 (*Geographic information \u2014 Registration\nand register governance*). Sub-registers profile this model rather than inventing their own.\n",
   "description": "A register is a catalogue with systematic governance: a content information model\n(what an item looks like) plus management metadata (who governs it, what state it is\nin, how it changes). ISO 19135:2026 defines one such register model \u2014 separating a\n**concept plane** (meaning: concepts and concept versions) from a **content plane**\n(representation: register item classes and register items) and adding a governance\nlayer of roles, statuses, actions and commitments.\n\nThis repository publishes that model as a single base [OGC Building\nBlock](https://ogcincubator.github.io/bblocks-docs/), independent of any one register's\nown content schema. Any register \u2014 a CSV catalogue, the OGC Definitions Server, a\nGitHub-managed vocabulary, or a Building Blocks register itself \u2014 maps its own\nschema's identifiers, statuses and roles onto this base model via a JSON-LD context,\nso that management metadata from otherwise unrelated registers becomes one queryable\ngraph. A sub-register's rules are expressed as a profile of this base block (null,\nadditive, or constrained), always validating against it.\n\nRegister vs. registry: the **register** is the governed information (items,\nidentifiers, statuses, roles, processes); the **register system** \u2014 often loosely\ncalled the \"registry\" \u2014 is merely the information system it happens to run on. This\nmodel describes the former, independent of the latter.\n",
-  "modified": "2026-10-23T15:42:19.586333",
+  "modified": "2026-10-27T12:53:55.145306",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"dc0fd35d6cd8801a5efabb93634cef74ca14d45d",
-      "shortCommitId": "\"dc0fd3",
-      "date": "2026-10-21T09:10:03+00:00\""
+      "commitId": "\"862052921203373f8136e6f464e0dfdd693e79f5",
+      "shortCommitId": "\"862052",
+      "date": "2026-10-26T21:53:11+00:00\""
     }
   },
   "gitRepository": "https://github.com/NielsHoffmann/registered-item-model",
@@ -299,7 +299,7 @@
         "metadata"
       ],
       "dateTimeAddition": "2026-09-17T00:00:00Z",
-      "dateOfLastChange": "2026-10-23",
+      "dateOfLastChange": "2026-10-27",
       "ontology": {
         "prof:hasArtifact": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/core-ontology/ontology.ttl",
         "prof:hasRole": "role:specification",
@@ -363,18 +363,12 @@
           "dct:conformsTo": "shacl:"
         }
       ],
-      "dateOfLastChange": "2026-10-23",
+      "dateOfLastChange": "2026-10-27",
       "ldContext": {
         "prof:hasArtifact": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/concept-version/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "ontology": {
-        "prof:hasArtifact": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/concept-version/ontology.ttl",
-        "prof:hasRole": "role:specification",
-        "dct:format": "text/turtle",
-        "dct:conformsTo": "http://www.w3.org/2002/07/owl#Ontology"
       },
       "schema": [
         {
@@ -419,6 +413,7 @@
       ],
       "skos:prefLabel": "Concept Version",
       "openAPIDocument": null,
+      "ontology": null,
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
@@ -449,18 +444,12 @@
           "dct:conformsTo": "shacl:"
         }
       ],
-      "dateOfLastChange": "2026-10-23",
+      "dateOfLastChange": "2026-10-27",
       "ldContext": {
         "prof:hasArtifact": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "ontology": {
-        "prof:hasArtifact": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register/ontology.ttl",
-        "prof:hasRole": "role:specification",
-        "dct:format": "text/turtle",
-        "dct:conformsTo": "http://www.w3.org/2002/07/owl#Ontology"
       },
       "schema": [
         {
@@ -505,6 +494,7 @@
       ],
       "skos:prefLabel": "Register",
       "openAPIDocument": null,
+      "ontology": null,
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
@@ -536,18 +526,12 @@
           "dct:conformsTo": "shacl:"
         }
       ],
-      "dateOfLastChange": "2026-10-23",
+      "dateOfLastChange": "2026-10-27",
       "ldContext": {
         "prof:hasArtifact": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-item-class/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "ontology": {
-        "prof:hasArtifact": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-item-class/ontology.ttl",
-        "prof:hasRole": "role:specification",
-        "dct:format": "text/turtle",
-        "dct:conformsTo": "http://www.w3.org/2002/07/owl#Ontology"
       },
       "schema": [
         {
@@ -592,6 +576,7 @@
       ],
       "skos:prefLabel": "Register Item Class",
       "openAPIDocument": null,
+      "ontology": null,
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
@@ -620,18 +605,12 @@
           "dct:conformsTo": "shacl:"
         }
       ],
-      "dateOfLastChange": "2026-10-23",
+      "dateOfLastChange": "2026-10-27",
       "ldContext": {
         "prof:hasArtifact": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-specification/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "ontology": {
-        "prof:hasArtifact": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-specification/ontology.ttl",
-        "prof:hasRole": "role:specification",
-        "dct:format": "text/turtle",
-        "dct:conformsTo": "http://www.w3.org/2002/07/owl#Ontology"
       },
       "schema": [
         {
@@ -676,6 +655,7 @@
       ],
       "skos:prefLabel": "Register Specification",
       "openAPIDocument": null,
+      "ontology": null,
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
@@ -749,7 +729,7 @@
         "plan"
       ],
       "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "dateOfLastChange": "2026-10-23",
+      "dateOfLastChange": "2026-10-27",
       "ontology": {
         "prof:hasArtifact": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/activity-type/ontology.ttl",
         "prof:hasRole": "role:specification",
@@ -835,18 +815,12 @@
           "dct:conformsTo": "shacl:"
         }
       ],
-      "dateOfLastChange": "2026-10-23",
+      "dateOfLastChange": "2026-10-27",
       "ldContext": {
         "prof:hasArtifact": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/registered-item/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "ontology": {
-        "prof:hasArtifact": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/registered-item/ontology.ttl",
-        "prof:hasRole": "role:specification",
-        "dct:format": "text/turtle",
-        "dct:conformsTo": "http://www.w3.org/2002/07/owl#Ontology"
       },
       "schema": [
         {
@@ -891,6 +865,7 @@
       ],
       "skos:prefLabel": "Registered Item",
       "openAPIDocument": null,
+      "ontology": null,
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
@@ -973,7 +948,7 @@
         "register"
       ],
       "dateTimeAddition": "2026-09-23T00:00:00Z",
-      "dateOfLastChange": "2026-10-23",
+      "dateOfLastChange": "2026-10-27",
       "ldContext": {
         "prof:hasArtifact": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/geoprocessing-activity-types/context.jsonld",
         "prof:hasRole": "role:mapping",
@@ -1068,18 +1043,12 @@
           "dct:conformsTo": "shacl:"
         }
       ],
-      "dateOfLastChange": "2026-10-23",
+      "dateOfLastChange": "2026-10-27",
       "ldContext": {
         "prof:hasArtifact": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-action/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "ontology": {
-        "prof:hasArtifact": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-action/ontology.ttl",
-        "prof:hasRole": "role:specification",
-        "dct:format": "text/turtle",
-        "dct:conformsTo": "http://www.w3.org/2002/07/owl#Ontology"
       },
       "schema": [
         {
@@ -1124,6 +1093,7 @@
       ],
       "skos:prefLabel": "Register Action",
       "openAPIDocument": null,
+      "ontology": null,
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
@@ -1229,7 +1199,7 @@
         "activity type"
       ],
       "dateTimeAddition": "2026-09-17T00:00:00Z",
-      "dateOfLastChange": "2026-10-23",
+      "dateOfLastChange": "2026-10-27",
       "ontology": {
         "prof:hasArtifact": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/st-ml-activity-types/ontology.ttl",
         "prof:hasRole": "role:specification",

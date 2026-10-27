@@ -1,30 +1,35 @@
 Validation report for ogc.model.registered-item.rim.concept-version - Concept Version
-Generated 2026-10-23T15:42:24.559485+00:00
+Generated 2026-10-27T12:53:58.381730+00:00
 === Files ===
-Using examples/example.ttl from examples
+Using example_1_1.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_1.jsonld created
 Output Turtle example_1_1.ttl created
 === End Files ===
 
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+
 === SHACL ===
 Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):
- - /github/workspace/_sources/rim/concept-version/ontology.ttl
  - /github/workspace/_sources/core-ontology/ontology.ttl
 Validation result for _sources/core-ontology/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/core-ontology/shapes.shacl:
- - Shape rim:ConceptShape: ex:c
- - Shape rim:ConceptVersionShape: ex:cv
- - Shape rim:CommitmentShape: *none*
- - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape rim:RegisterItemClassShape: *none*
- - Shape rim:RegisterItemShape: *none*
- - Shape rim:RegisterActionShape: *none*
- - Shape rim:TextShape/sh:or/rdf:first: *none*
- - Shape rim:RegisterShape: *none*
- - Shape rim:TextShape: *none*
  - Shape rim:RegisterSpecificationShape: *none*
+ - Shape rim:TextShape: *none*
+ - Shape rim:RegisterActionShape: *none*
+ - Shape rim:RegisterItemShape: *none*
+ - Shape rim:CommitmentShape: *none*
+ - Shape rim:ConceptShape: ex:c
+ - Shape rim:RegisterShape: *none*
+ - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape rim:TextShape/sh:or/rdf:first: *none*
+ - Shape rim:ConceptVersionShape: ex:cv
+ - Shape rim:RegisterItemClassShape: *none*
 
 === End SHACL ===
 

@@ -63,7 +63,7 @@
     "activity type"
   ],
   "dateTimeAddition": "2026-09-17T00:00:00Z",
-  "dateOfLastChange": "2026-10-23",
+  "dateOfLastChange": "2026-10-27",
   "ontology": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/st-ml-activity-types/ontology.ttl",
   "schema": {
     "application/yaml": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/st-ml-activity-types/schema.yaml",
@@ -146,7 +146,7 @@
     "owl": "http://www.w3.org/2002/07/owl#",
     "ex": "https://example.org/registers/ml-activities/"
   },
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: SpatioTemporal ML Activity Types Profile\ndescription: 'A profile of the Activity Type Register Profile for SpatioTemporal ML\n  Activity Types\n\n  '\nallOf:\n- $ref: https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/geoprocessing-activity-types/schema.yaml\nx-bblocks-metadata:\n  itemIdentifier: ogc.model.registered-item.st-ml-activity-types\n  register: https://nielshoffmann.github.io/registered-item-model/build/register.json\n  version: '0.3'\n  dateOfLastChange: '2026-10-23'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: SpatioTemporal ML Activity Types Profile\ndescription: 'A profile of the Activity Type Register Profile for SpatioTemporal ML\n  Activity Types\n\n  '\nallOf:\n- $ref: https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/geoprocessing-activity-types/schema.yaml\nx-bblocks-metadata:\n  itemIdentifier: ogc.model.registered-item.st-ml-activity-types\n  register: https://nielshoffmann.github.io/registered-item-model/build/register.json\n  version: '0.3'\n  dateOfLastChange: '2026-10-27'\n",
   "gitRepository": "https://github.com/NielsHoffmann/registered-item-model",
   "gitPath": "_sources/st-ml-activity-types"
 }

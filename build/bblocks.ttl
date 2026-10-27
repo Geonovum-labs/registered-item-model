@@ -2,8 +2,8 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.iana.org/assignments/> .
-@prefix ns2: <http://www.w3.org/ns/oa#> .
+@prefix ns1: <http://www.w3.org/ns/oa#> .
+@prefix ns2: <http://www.iana.org/assignments/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -21,39 +21,35 @@
     rdfs:label "Register Action" ;
     dct:abstract "A REGISTER interaction activity model with JSON/LD/RDF implementation as defined by ISO/FDIS 19135:2026. Modular Building Block to support interoperable profiles of register"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-25T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/json-full/model/registered-item/rim/register-action/index.json> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/bblock/ogc.model.registered-item.rim.register-action> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/markdown/model/registered-item/rim/register-action/index.md> ] ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/markdown/model/registered-item/rim/register-action/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/json-full/model/registered-item/rim/register-action/index.json> ] ;
     dct:hasVersion "0.2" ;
-    dct:modified "2026-10-23"^^xsd:date ;
+    dct:modified "2026-10-27"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/registered-item-model/> ;
     skos:prefLabel "Register Action" ;
     skos:topConceptOf <https://nielshoffmann.github.io/registered-item-model/> ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
+            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-action/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-action/context.jsonld> ;
-            prof:hasRole role:mapping ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.model.registered-item.core-ontology> ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
-            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo owl:Ontology ;
-            dct:format "text/turtle" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-action/ontology.ttl> ;
-            prof:hasRole role:specification ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-action/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-action/schema.yaml> ;
@@ -71,14 +67,14 @@
     rdfs:label "Register Specification" ;
     dct:abstract "Modular RDF implementation profile based on ISO/FDIS 19135:2026."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-25T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/bblock/ogc.model.registered-item.rim.register-specification> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/json-full/model/registered-item/rim/register-specification/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/markdown/model/registered-item/rim/register-specification/index.md> ] ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/markdown/model/registered-item/rim/register-specification/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/bblock/ogc.model.registered-item.rim.register-specification> ] ;
     dct:hasVersion "0.2" ;
-    dct:modified "2026-10-23"^^xsd:date ;
+    dct:modified "2026-10-27"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/registered-item-model/> ;
     skos:prefLabel "Register Specification" ;
     skos:topConceptOf <https://nielshoffmann.github.io/registered-item-model/> ;
@@ -95,10 +91,6 @@
             rdfs:seeAlso <bblocks://ogc.model.registered-item.core-ontology> ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo owl:Ontology ;
-            dct:format "text/turtle" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-specification/ontology.ttl> ;
-            prof:hasRole role:specification ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-specification/context.jsonld> ;
@@ -118,18 +110,18 @@
 
 <https://nielshoffmann.github.io/registered-item-model/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:N6b49ccc68f3d441da3f852dd5ddcf140 ;
+    prov:wasAttributedTo _:N6e4318c0ebed4b71a910dbc4f46a153a ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-10-23T15:42:34.913124"^^xsd:dateTime ;
-            prov:startedAtTime "2026-10-23T15:42:34.609511"^^xsd:dateTime ;
+            prov:endedAtTime "2026-10-27T12:54:06.477822"^^xsd:dateTime ;
+            prov:startedAtTime "2026-10-27T12:54:06.305476"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:5b36487e20ac50abdd844a606ec3f0879c8ad1ef" ;
+                    dct:hasVersion "git:b9a7263042273bdc1f4b80cfebc1f734f49c8dcb" ;
                     rdfs:seeAlso <https://nielshoffmann.github.io/registered-item-model/build/register.json> ],
                 [ a prov:Entity ;
                     dct:format "application/yaml" ;
                     rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
-            prov:wasAssociatedWith _:N6b49ccc68f3d441da3f852dd5ddcf140 ] .
+            prov:wasAssociatedWith _:N6e4318c0ebed4b71a910dbc4f46a153a ] .
 
 <https://www.iso.org/standard/86261.html> rdfs:label "ISO 19135:2026, Geographic information — Registration and register governance" .
 
@@ -149,23 +141,11 @@
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/bblock/ogc.model.registered-item.rim.registered-item> ] ;
     dct:hasVersion "0.2" ;
-    dct:modified "2026-10-23"^^xsd:date ;
+    dct:modified "2026-10-27"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/registered-item-model/> ;
     skos:prefLabel "Registered Item" ;
     skos:topConceptOf <https://nielshoffmann.github.io/registered-item-model/> ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/registered-item/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/registered-item/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo owl:Ontology ;
-            dct:format "text/turtle" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/registered-item/ontology.ttl> ;
-            prof:hasRole role:specification ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/registered-item/context.jsonld> ;
             prof:hasRole role:mapping ],
@@ -173,7 +153,15 @@
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.model.registered-item.core-ontology> ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
-            prof:hasRole role:validation ] ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/registered-item/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/registered-item/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.model.registered-item.rim.concept-version>,
         <bblocks://ogc.model.registered-item.rim.register>,
         <bblocks://ogc.model.registered-item.rim.register-item-class> ;
@@ -188,15 +176,15 @@
     rdfs:label "SpatioTemporal ML Activity Types Profile" ;
     dct:abstract "A profile of the SpatioTemporal Machine learning Activity Types Profile describing spatiotemporal machine learning training and inference runs, and registrable ML activity types, using the STAC MLM extension's task, framework/accelerator and input/output vocabulary."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/json-full/model/registered-item/st-ml-activity-types/index.json> ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/markdown/model/registered-item/st-ml-activity-types/index.md> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/bblock/ogc.model.registered-item.st-ml-activity-types> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/markdown/model/registered-item/st-ml-activity-types/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/json-full/model/registered-item/st-ml-activity-types/index.json> ],
         "The STAC Machine Learning Model (MLM) extension describes a model as a static artifact — a STAC Item or Collection with declared inputs, outputs and requirements — but has no notion of a particular run of that model. This block adds that: mlact:MLActivityType (with mlact:TrainingActivityType and mlact:InferenceActivityType sub-types) is a geoproc:GeoprocessingActivityType recording one execution, and so can be specialised into ML activity types held in an activity type register. It is also a rim:RegisterAction. In this ecosystem, running a model is itself a governed act — typically the one that adds a derived product to a register as a new rim:RegisterItem — so the run belongs in the same audit trail as any other register action. The activity's task, framework and accelerator are drawn from the MLM extension's own SKOS schemes rather than redefined, and its recorded inputs/outputs (mlact:ActivityInput / mlact:ActivityOutput, both prov:Entity) each declare via dct:conformsTo which of the model's own declared mlm:ModelInput/mlm:ModelOutput specifications they realise. Registered ML activity types must declare at least one mlact:ActivityInput sub-type as a used entity type, and registered inference types at least one mlact:ActivityOutput sub-type as a generated entity type."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:hasVersion "0.3" ;
-    dct:modified "2026-10-23"^^xsd:date ;
+    dct:modified "2026-10-27"^^xsd:date ;
     dct:source <https://github.com/ogcincubator/bblocks-stac/tree/master/_sources/extensions/mlm-ontology>,
         <https://github.com/stac-extensions/mlm/blob/main/README.md>,
         <https://www.w3.org/TR/prov-o/> ;
@@ -211,22 +199,23 @@
         "register" ;
     prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.model.registered-item.st-ml-activity-types> ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/st-ml-activity-types/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.model.registered-item.activity-type> ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/activity-type/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/st-ml-activity-types/schema.json> ;
-            prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.registered-item.core-ontology> ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
+            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
+            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/st-ml-activity-types/schema.yaml> ;
-            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/st-ml-activity-types/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.model.registered-item.geoprocessing-activity-types> ;
@@ -237,24 +226,23 @@
             rdfs:seeAlso <bblocks://ogc.contrib.stac.extensions.mlm-ontology> ;
             prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/extensions/mlm-ontology/shapes.shacl> ;
             prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/st-ml-activity-types/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/st-ml-activity-types/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.model.registered-item.core-ontology> ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
         [ dct:conformsTo owl:Ontology ;
             dct:format "text/turtle" ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/st-ml-activity-types/ontology.ttl> ;
-            prof:hasRole role:specification ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.registered-item.st-ml-activity-types> ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/st-ml-activity-types/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
-            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/st-ml-activity-types/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:specification ] ;
     prof:isProfileOf <bblocks://ogc.model.registered-item.geoprocessing-activity-types> ;
     bblocks:dependsOn <bblocks://ogc.contrib.stac.extensions.mlm-ontology>,
         <bblocks://ogc.model.registered-item.geoprocessing-activity-types> ;
@@ -268,25 +256,21 @@
     rdfs:label "Concept Version" ;
     dct:abstract "Modular RDF implementation profile based on ISO/FDIS 19135:2026."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-25T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/json-full/model/registered-item/rim/concept-version/index.json> ],
+        [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/bblock/ogc.model.registered-item.rim.concept-version> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/markdown/model/registered-item/rim/concept-version/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/json-full/model/registered-item/rim/concept-version/index.json> ] ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/markdown/model/registered-item/rim/concept-version/index.md> ] ;
     dct:hasVersion "0.2" ;
-    dct:modified "2026-10-23"^^xsd:date ;
+    dct:modified "2026-10-27"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/registered-item-model/> ;
     skos:prefLabel "Concept Version" ;
     skos:topConceptOf <https://nielshoffmann.github.io/registered-item-model/> ;
-    prof:hasResource [ dct:conformsTo owl:Ontology ;
-            dct:format "text/turtle" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/concept-version/ontology.ttl> ;
-            prof:hasRole role:specification ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/concept-version/context.jsonld> ;
-            prof:hasRole role:mapping ],
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/concept-version/schema.yaml> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/concept-version/schema.json> ;
@@ -296,10 +280,10 @@
             rdfs:seeAlso <bblocks://ogc.model.registered-item.core-ontology> ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/concept-version/schema.yaml> ;
-            prof:hasRole role:schema ] ;
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/concept-version/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://ogc.model.registered-item.core-ontology> ;
     bblocks:hasSourceJsonLdContext <https://nielshoffmann.github.io/registered-item-model/_sources/rim/concept-version/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -316,12 +300,12 @@
     dct:created "2026-09-25T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/markdown/model/registered-item/rim/register/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/bblock/ogc.model.registered-item.rim.register> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/json-full/model/registered-item/rim/register/index.json> ] ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/json-full/model/registered-item/rim/register/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/bblock/ogc.model.registered-item.rim.register> ] ;
     dct:hasVersion "0.2" ;
-    dct:modified "2026-10-23"^^xsd:date ;
+    dct:modified "2026-10-27"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/registered-item-model/> ;
     skos:prefLabel "Register" ;
     skos:topConceptOf <https://nielshoffmann.github.io/registered-item-model/> ;
@@ -333,19 +317,15 @@
             dct:format "application/yaml" ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo owl:Ontology ;
-            dct:format "text/turtle" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register/ontology.ttl> ;
-            prof:hasRole role:specification ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register/schema.json> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.model.registered-item.core-ontology> ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:validation ] ;
     bblocks:dependsOn <bblocks://ogc.model.registered-item.core-ontology> ;
     bblocks:hasSourceJsonLdContext <https://nielshoffmann.github.io/registered-item-model/_sources/rim/register/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -358,14 +338,14 @@
     rdfs:label "Register Item Class" ;
     dct:abstract "A REGISTER ITEM CLASS model with JSON/LD/RDF implementation as defined by ISO/FDIS 19135:2026. (describes the type of object in a register) Modular Building Block to support interoperable profiles of register"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-25T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/json-full/model/registered-item/rim/register-item-class/index.json> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/bblock/ogc.model.registered-item.rim.register-item-class> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/json-full/model/registered-item/rim/register-item-class/index.json> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/markdown/model/registered-item/rim/register-item-class/index.md> ] ;
     dct:hasVersion "0.2" ;
-    dct:modified "2026-10-23"^^xsd:date ;
+    dct:modified "2026-10-27"^^xsd:date ;
     skos:inScheme <https://nielshoffmann.github.io/registered-item-model/> ;
     skos:prefLabel "Register Item Class" ;
     skos:topConceptOf <https://nielshoffmann.github.io/registered-item-model/> ;
@@ -373,23 +353,19 @@
             dct:format "application/json" ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-item-class/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-item-class/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-item-class/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo owl:Ontology ;
-            dct:format "text/turtle" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-item-class/ontology.ttl> ;
-            prof:hasRole role:specification ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.model.registered-item.core-ontology> ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
-            prof:hasRole role:validation ] ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-item-class/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-item-class/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://ogc.model.registered-item.rim.concept-version>,
         <bblocks://ogc.model.registered-item.rim.register> ;
     bblocks:hasSourceJsonLdContext <https://nielshoffmann.github.io/registered-item-model/_sources/rim/register-item-class/context.jsonld> ;
@@ -403,15 +379,15 @@
     rdfs:label "Geoprocessing Activity Types Profile" ;
     dct:abstract "A profile of the Activity Type Register Profile for geoprocessing activity types: registered sub-classes of geoproc:GeoprocessingActivityType, each required to use or generate at least one GeoSPARQL spatial data type."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/bblock/ogc.model.registered-item.geoprocessing-activity-types> ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/json-full/model/registered-item/geoprocessing-activity-types/index.json> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/markdown/model/registered-item/geoprocessing-activity-types/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/bblock/ogc.model.registered-item.geoprocessing-activity-types> ],
         "Geoprocessing activities (reprojection, clipping, index computation, classification, model inference over imagery) are distinguished from other activities by the kind of data they use and produce. This block adds geoproc:GeoprocessingActivityType, a sub-class of acttype:ActivityType that every registered geoprocessing activity type specialises. It also constrains the related PROV object types such a type declares: at least one acttype:usedEntityType or acttype:generatedEntityType must be a GeoSPARQL 1.1 spatial type (geo:SpatialObject or geo:SpatialObjectCollection, or a sub-class of either). Further profiles, such as the ML Activity Types Profile, specialise geoproc:GeoprocessingActivityType in turn and add their own constraints."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:hasVersion "0.3" ;
-    dct:modified "2026-10-23"^^xsd:date ;
+    dct:modified "2026-10-27"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/22-047r1/22-047r1.html>,
         <https://www.w3.org/TR/prov-o/> ;
     skos:closeMatch <https://w3id.org/ogc/rim/geoprocessing/GeoprocessingActivityType> ;
@@ -424,20 +400,6 @@
         "register" ;
     prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.registered-item.core-ontology> ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
-            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/geoprocessing-activity-types/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.model.registered-item.geoprocessing-activity-types> ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/geoprocessing-activity-types/shapes.shacl> ;
             prof:hasRole role:validation ],
@@ -445,19 +407,33 @@
             dct:format "text/turtle" ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/geoprocessing-activity-types/ontology.ttl> ;
             prof:hasRole role:specification ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.model.registered-item.core-ontology> ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/geoprocessing-activity-types/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.registered-item.activity-type> ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/activity-type/shapes.shacl> ;
+            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
+            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/geoprocessing-activity-types/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.model.registered-item.activity-type> ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/activity-type/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/geoprocessing-activity-types/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     prof:isProfileOf <bblocks://ogc.model.registered-item.activity-type> ;
     bblocks:dependsOn <bblocks://ogc.model.cross-domain.geosparql>,
         <bblocks://ogc.model.registered-item.activity-type> ;
@@ -472,15 +448,15 @@
     rdfs:label "Activity Type Register Profile" ;
     dct:abstract "A profile of the Registered Item Model for governed activity type records in the acttype:ActivityType hierarchy, with related PROV object types and an optional plan."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/bblock/ogc.model.registered-item.activity-type> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/markdown/model/registered-item/activity-type/index.md> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/json-full/model/registered-item/activity-type/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/bblock/ogc.model.registered-item.activity-type> ],
         "An activity type register governs activity types with identifiers, statuses and change history. Specific activity type classes specialise acttype:ActivityType, a sub-class of rim:RegisterItem. Registered types may be classes used to type individual activity records; those records also inherit register item requirements. Every activity type record uses acttype:activityTypeItemClass and belongs to the acttype:ActivityType hierarchy through rdf:type. Related entity, agent and activity types and an optional prov:Plan describe the expected activity. Further profiles specialise the root and constrain these related types."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:hasVersion "0.3" ;
-    dct:modified "2026-10-23"^^xsd:date ;
+    dct:modified "2026-10-27"^^xsd:date ;
     dct:source <https://www.opmw.org/model/p-plan/>,
         <https://www.w3.org/TR/prov-o/> ;
     skos:closeMatch <https://w3id.org/ogc/rim/activity-type/ActivityType> ;
@@ -491,23 +467,14 @@
         "plan",
         "provenance",
         "register" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/activity-type/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.model.registered-item.activity-type> ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/activity-type/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo owl:Ontology ;
-            dct:format "text/turtle" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/activity-type/ontology.ttl> ;
-            prof:hasRole role:specification ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/activity-type/context.jsonld> ;
             prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/activity-type/schema.json> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.model.registered-item.core-ontology> ;
@@ -518,6 +485,15 @@
             rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
             prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
             prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.model.registered-item.activity-type> ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/activity-type/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo owl:Ontology ;
+            dct:format "text/turtle" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/activity-type/ontology.ttl> ;
+            prof:hasRole role:specification ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/activity-type/schema.yaml> ;
@@ -535,15 +511,15 @@
     rdfs:label "Registered Item Model" ;
     dct:abstract "A base RDF and SHACL model for register items, register item classes and register governance metadata, based on ISO 19135:2026."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-17T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/bblock/ogc.model.registered-item.core-ontology> ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/markdown/model/registered-item/core-ontology/index.md> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/build/generateddocs/json-full/model/registered-item/core-ontology/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://nielshoffmann.github.io/registered-item-model/bblock/ogc.model.registered-item.core-ontology> ],
         "A register is a catalogue distinguished from a plain dataset by systematic governance: a content information model (register item classes and register items) plus management metadata (identifiers, statuses, actions, roles). ISO 19135:2026 defines one such model, separating a concept plane (meaning) from a content plane (representation) and adding roles, statuses, actions, relations and commitments on top. This block publishes that model as a single base building block so that many registers with different native schemas — a CSV catalogue, the OGC Definitions Server, a GitHub-managed vocabulary, or a Building Blocks register itself — can each map their own fields onto it via a JSON-LD context, and be queried as one graph. Sub-registers are expected to profile this block (null, additive or constrained) rather than invent their own register model."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:hasVersion "0.1" ;
-    dct:modified "2026-10-23"^^xsd:date ;
+    dct:modified "2026-10-27"^^xsd:date ;
     dct:source <https://github.com/ogcincubator/bblocks-docs/blob/master/design/register-governance.md>,
         <https://www.iso.org/standard/86261.html> ;
     skos:inScheme <https://nielshoffmann.github.io/registered-item-model/> ;
@@ -553,15 +529,15 @@
         "governance",
         "metadata",
         "register" ;
-    prof:hasResource [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo owl:Ontology ;
+            dct:format "text/turtle" ;
+            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/core-ontology/ontology.ttl> ;
+            prof:hasRole role:specification ],
+        [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.model.registered-item.core-ontology> ;
             prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo owl:Ontology ;
-            dct:format "text/turtle" ;
-            prof:hasArtifact <https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/core-ontology/ontology.ttl> ;
-            prof:hasRole role:specification ] ;
+            prof:hasRole role:validation ] ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
@@ -594,7 +570,7 @@ identifiers, statuses, roles, processes); the **register system** — often loos
 called the "registry" — is merely the information system it happens to run on. This
 model describes the former, independent of the latter.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-10-23T15:42:19.586333"^^xsd:dateTime ;
+    dct:modified "2026-10-27T12:53:55.145306"^^xsd:dateTime ;
     owl:imports <https://ogcincubator.github.io/bblocks-stac/build/register.json>,
         <https://ogcincubator.github.io/cross-domain-model/build/register.json>,
         <https://opengeospatial.github.io/bblocks/register.json> ;
@@ -611,20 +587,20 @@ model describes the former, independent of the latter.
     skos:prefLabel "Building Blocks - Registered Item Model" ;
     prof:hasResource [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
             dct:type "text/turtle" ;
-            ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            ns2:hasTarget <https://nielshoffmann.github.io/registered-item-model/build/bblocks.ttl> ],
-        [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
-            dct:type "application/ld+json" ;
-            ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            ns2:hasTarget <https://nielshoffmann.github.io/registered-item-model/build/bblocks.jsonld> ],
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://nielshoffmann.github.io/registered-item-model/build/bblocks.ttl> ],
         [ rdfs:label "This Building Blocks Register in JSON format" ;
             dct:type "application/json" ;
-            ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            ns2:hasTarget <https://nielshoffmann.github.io/registered-item-model/build/register.json> ] ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://nielshoffmann.github.io/registered-item-model/build/register.json> ],
+        [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
+            dct:type "application/ld+json" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://nielshoffmann.github.io/registered-item-model/build/bblocks.jsonld> ] ;
     foaf:homepage <https://nielshoffmann.github.io/registered-item-model/> ;
     bblocks:hasValidationReport <https://nielshoffmann.github.io/registered-item-model/build/tests/report.html> .
 
-_:N6b49ccc68f3d441da3f852dd5ddcf140 a prov:Agent,
+_:N6e4318c0ebed4b71a910dbc4f46a153a a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.36" ;
