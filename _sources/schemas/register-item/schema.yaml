@@ -1,5 +1,5 @@
 $schema: https://json-schema.org/draft/2020-12/schema
-title: ISO 19135 Registered Item
+title: ISO 19135 Register Item
 description: >-
   A register item: the concrete record in a register's content plane (ISO 19135:2026). Pins the
   model's required core -- object identifier, item class, validity and publication status -- and
