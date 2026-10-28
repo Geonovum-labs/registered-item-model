@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "version": "0.2",
   "dependsOn": [
-    "ogc.rim.schemas.registered-item",
+    "ogc.rim.schemas.register-item",
     "ogc.model.cross-domain.prov"
   ]
 }
