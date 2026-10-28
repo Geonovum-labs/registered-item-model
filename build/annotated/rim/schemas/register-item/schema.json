@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "ISO 19135 Registered Item",
+  "title": "ISO 19135 Register Item",
   "description": "A register item: the concrete record in a register's content plane (ISO 19135:2026). Pins the model's required core -- object identifier, item class, validity and publication status -- and nothing else, so that a sub-register can `allOf`-reference this schema and add its own content properties. `type` is not pinned: a sub-register uses its own type term, declared in its ontology as a sub-class of rim:RegisterItem, and the base SHACL shape then applies through that sub-class.",
   "type": "object",
   "required": [
@@ -283,7 +283,7 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "x-bblocks-metadata": {
-    "itemIdentifier": "ogc.rim.schemas.registered-item",
+    "itemIdentifier": "ogc.rim.schemas.register-item",
     "register": "https://geonovum-labs.github.io/registered-item-model/build/register.json",
     "version": "0.2",
     "dateOfLastChange": "2026-10-28"

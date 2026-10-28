@@ -21,12 +21,12 @@
     rdfs:label "Register Action" ;
     dct:abstract "A REGISTER interaction activity model with JSON/LD/RDF implementation as defined by ISO/FDIS 19135:2026. Modular Building Block to support interoperable profiles of register"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-25T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/build/generateddocs/markdown/rim/schemas/register-action/index.md> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/build/generateddocs/json-full/rim/schemas/register-action/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/bblock/ogc.rim.schemas.register-action> ] ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/bblock/ogc.rim.schemas.register-action> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/build/generateddocs/markdown/rim/schemas/register-action/index.md> ] ;
     dct:hasVersion "0.2" ;
     dct:modified "2026-10-28"^^xsd:date ;
     skos:inScheme <https://geonovum-labs.github.io/registered-item-model/> ;
@@ -38,12 +38,12 @@
             prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-action/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-action/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-action/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
@@ -55,7 +55,7 @@
             prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
             prof:hasRole role:validation ] ;
     bblocks:dependsOn <bblocks://ogc.model.cross-domain.prov>,
-        <bblocks://ogc.rim.schemas.registered-item> ;
+        <bblocks://ogc.rim.schemas.register-item> ;
     bblocks:hasSourceJsonLdContext <https://geonovum-labs.github.io/registered-item-model/_sources/schemas/register-action/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -69,32 +69,32 @@
     dct:created "2026-09-25T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/build/generateddocs/markdown/rim/schemas/register-specification/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/bblock/ogc.rim.schemas.register-specification> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/build/generateddocs/json-full/rim/schemas/register-specification/index.json> ] ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/build/generateddocs/json-full/rim/schemas/register-specification/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/bblock/ogc.rim.schemas.register-specification> ] ;
     dct:hasVersion "0.2" ;
     dct:modified "2026-10-28"^^xsd:date ;
     skos:inScheme <https://geonovum-labs.github.io/registered-item-model/> ;
     skos:prefLabel "Register Specification" ;
     skos:topConceptOf <https://geonovum-labs.github.io/registered-item-model/> ;
-    prof:hasResource [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.rim.core-ontology> ;
-            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-specification/schema.json> ;
-            prof:hasRole role:schema ],
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-specification/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-specification/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-specification/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-specification/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.rim.core-ontology> ;
+            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ] ;
     bblocks:dependsOn <bblocks://ogc.rim.schemas.register> ;
     bblocks:hasSourceJsonLdContext <https://geonovum-labs.github.io/registered-item-model/_sources/schemas/register-specification/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -102,22 +102,64 @@
 
 <https://geonovum-labs.github.io/registered-item-model/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:Nd420044123ec489a9103b554ae33c606 ;
+    prov:wasAttributedTo _:N4af2cddb15864e28b4d46d2144d307ab ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-10-28T18:11:08.762628"^^xsd:dateTime ;
-            prov:startedAtTime "2026-10-28T18:11:08.591699"^^xsd:dateTime ;
+            prov:endedAtTime "2026-10-28T18:27:21.367108"^^xsd:dateTime ;
+            prov:startedAtTime "2026-10-28T18:27:21.172102"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:f62d89b251c4b6deb74ceff58f1a53578cc80b69" ;
+                    dct:hasVersion "git:add6b1e0e6e6601292aea1fa5448f3fea1d9d6b7" ;
                     rdfs:seeAlso <https://geonovum-labs.github.io/registered-item-model/build/register.json> ],
                 [ a prov:Entity ;
                     dct:format "application/yaml" ;
                     rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
-            prov:wasAssociatedWith _:Nd420044123ec489a9103b554ae33c606 ] .
+            prov:wasAssociatedWith _:N4af2cddb15864e28b4d46d2144d307ab ] .
 
 <https://github.com/ogcincubator/bblocks-docs/blob/master/design/register-governance.md> rdfs:label "Registers and register governance for federated semantic resources (companion analysis)" .
 
 <https://www.iso.org/standard/86261.html> rdfs:label "ISO 19135:2026, Geographic information — Registration and register governance" .
+
+<bblocks://ogc.rim.schemas.register-item> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "Register Item" ;
+    dct:abstract "A REGISTER ITEM model with JSON/LD/RDF implementation as defined by ISO/FDIS 19135:2026. This provides a canonical schema for a register entry, that can be extended according the REGISTER ITEM CLASS defined for the register."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2026-09-25T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/bblock/ogc.rim.schemas.register-item> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/build/generateddocs/markdown/rim/schemas/register-item/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/build/generateddocs/json-full/rim/schemas/register-item/index.json> ] ;
+    dct:hasVersion "0.2" ;
+    dct:modified "2026-10-28"^^xsd:date ;
+    skos:inScheme <https://geonovum-labs.github.io/registered-item-model/> ;
+    skos:prefLabel "Register Item" ;
+    skos:topConceptOf <https://geonovum-labs.github.io/registered-item-model/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-item/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-item/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.rim.core-ontology> ;
+            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-item/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:dependsOn <bblocks://ogc.rim.schemas.concept-version>,
+        <bblocks://ogc.rim.schemas.register>,
+        <bblocks://ogc.rim.schemas.register-item-class> ;
+    bblocks:hasSourceJsonLdContext <https://geonovum-labs.github.io/registered-item-model/_sources/schemas/register-item/context.jsonld> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
 
 <bblocks://ogc.rim.schemas.register-item-class> a skos:Concept,
         dcat:Dataset,
@@ -137,15 +179,15 @@
     skos:inScheme <https://geonovum-labs.github.io/registered-item-model/> ;
     skos:prefLabel "Register Item Class" ;
     skos:topConceptOf <https://geonovum-labs.github.io/registered-item-model/> ;
-    prof:hasResource [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-item-class/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.rim.core-ontology> ;
             prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-item-class/schema.json> ;
-            prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-item-class/schema.yaml> ;
@@ -160,48 +202,6 @@
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
-<bblocks://ogc.rim.schemas.registered-item> a skos:Concept,
-        dcat:Dataset,
-        bblocks:BBlock,
-        bblocks:Schema ;
-    rdfs:label "Registered Item" ;
-    dct:abstract "A REGISTER ITEM model with JSON/LD/RDF implementation as defined by ISO/FDIS 19135:2026. This provides a canonical schema for a register entry, that can be extended according the REGISTER ITEM CLASS defined for the register."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:created "2026-09-25T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/build/generateddocs/json-full/rim/schemas/registered-item/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/build/generateddocs/markdown/rim/schemas/registered-item/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/bblock/ogc.rim.schemas.registered-item> ] ;
-    dct:hasVersion "0.2" ;
-    dct:modified "2026-10-28"^^xsd:date ;
-    skos:inScheme <https://geonovum-labs.github.io/registered-item-model/> ;
-    skos:prefLabel "Registered Item" ;
-    skos:topConceptOf <https://geonovum-labs.github.io/registered-item-model/> ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/registered-item/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/registered-item/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.rim.core-ontology> ;
-            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
-            prof:hasRole role:validation ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/registered-item/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
-    bblocks:dependsOn <bblocks://ogc.rim.schemas.concept-version>,
-        <bblocks://ogc.rim.schemas.register>,
-        <bblocks://ogc.rim.schemas.register-item-class> ;
-    bblocks:hasSourceJsonLdContext <https://geonovum-labs.github.io/registered-item-model/_sources/schemas/registered-item/context.jsonld> ;
-    bblocks:status <http://www.opengis.net/def/status/under-development> ;
-    bblocks:validationPassed true .
-
 <bblocks://ogc.rim.schemas.concept-version> a skos:Concept,
         dcat:Dataset,
         bblocks:BBlock,
@@ -209,18 +209,22 @@
     rdfs:label "Concept Version" ;
     dct:abstract "Modular RDF implementation profile based on ISO/FDIS 19135:2026."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-09-25T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/bblock/ogc.rim.schemas.concept-version> ],
+        [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/build/generateddocs/json-full/rim/schemas/concept-version/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/build/generateddocs/markdown/rim/schemas/concept-version/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/bblock/ogc.rim.schemas.concept-version> ] ;
+            rdfs:isDefinedBy <https://geonovum-labs.github.io/registered-item-model/build/generateddocs/markdown/rim/schemas/concept-version/index.md> ] ;
     dct:hasVersion "0.2" ;
     dct:modified "2026-10-28"^^xsd:date ;
     skos:inScheme <https://geonovum-labs.github.io/registered-item-model/> ;
     skos:prefLabel "Concept Version" ;
     skos:topConceptOf <https://geonovum-labs.github.io/registered-item-model/> ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/concept-version/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/concept-version/schema.yaml> ;
             prof:hasRole role:schema ],
@@ -232,11 +236,7 @@
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/concept-version/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/concept-version/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://ogc.rim.core-ontology> ;
     bblocks:hasSourceJsonLdContext <https://geonovum-labs.github.io/registered-item-model/_sources/schemas/concept-version/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
@@ -260,14 +260,14 @@
     skos:inScheme <https://geonovum-labs.github.io/registered-item-model/> ;
     skos:prefLabel "Register" ;
     skos:topConceptOf <https://geonovum-labs.github.io/registered-item-model/> ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register/schema.json> ;
             prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register/schema.yaml> ;
@@ -307,15 +307,15 @@
         "governance",
         "metadata",
         "register" ;
-    prof:hasResource [ dct:conformsTo owl:Ontology ;
-            dct:format "text/turtle" ;
-            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/core-ontology/ontology.ttl> ;
-            prof:hasRole role:specification ],
-        [ dct:conformsTo shacl: ;
+    prof:hasResource [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.rim.core-ontology> ;
             prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/_sources/core-ontology/shapes.shacl> ;
-            prof:hasRole role:validation ] ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo owl:Ontology ;
+            dct:format "text/turtle" ;
+            prof:hasArtifact <https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/core-ontology/ontology.ttl> ;
+            prof:hasRole role:specification ] ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
 
@@ -348,7 +348,7 @@ identifiers, statuses, roles, processes); the **register system** — often loos
 called the "registry" — is merely the information system it happens to run on. This
 model describes the former, independent of the latter.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-10-28T18:11:04.811534"^^xsd:dateTime ;
+    dct:modified "2026-10-28T18:27:15.915053"^^xsd:dateTime ;
     owl:imports <https://ogcincubator.github.io/bblocks-stac/build/register.json>,
         <https://ogcincubator.github.io/cross-domain-model/build/register.json>,
         <https://opengeospatial.github.io/bblocks/register.json> ;
@@ -356,26 +356,26 @@ model describes the former, independent of the latter.
         <bblocks://ogc.rim.schemas.concept-version>,
         <bblocks://ogc.rim.schemas.register>,
         <bblocks://ogc.rim.schemas.register-action>,
+        <bblocks://ogc.rim.schemas.register-item>,
         <bblocks://ogc.rim.schemas.register-item-class>,
-        <bblocks://ogc.rim.schemas.register-specification>,
-        <bblocks://ogc.rim.schemas.registered-item> ;
+        <bblocks://ogc.rim.schemas.register-specification> ;
     skos:prefLabel "Building Blocks - Registered Item Model" ;
     prof:hasResource [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
             dct:type "application/ld+json" ;
             ns1:relation <http://www.iana.org/assignments/relation/self> ;
             ns2:hasTarget <https://geonovum-labs.github.io/registered-item-model/build/bblocks.jsonld> ],
-        [ rdfs:label "This Building Blocks Register in JSON format" ;
-            dct:type "application/json" ;
-            ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            ns2:hasTarget <https://geonovum-labs.github.io/registered-item-model/build/register.json> ],
         [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
             dct:type "text/turtle" ;
             ns1:relation <http://www.iana.org/assignments/relation/self> ;
-            ns2:hasTarget <https://geonovum-labs.github.io/registered-item-model/build/bblocks.ttl> ] ;
+            ns2:hasTarget <https://geonovum-labs.github.io/registered-item-model/build/bblocks.ttl> ],
+        [ rdfs:label "This Building Blocks Register in JSON format" ;
+            dct:type "application/json" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://geonovum-labs.github.io/registered-item-model/build/register.json> ] ;
     foaf:homepage <https://geonovum-labs.github.io/registered-item-model/> ;
     bblocks:hasValidationReport <https://geonovum-labs.github.io/registered-item-model/build/tests/report.html> .
 
-_:Nd420044123ec489a9103b554ae33c606 a prov:Agent,
+_:N4af2cddb15864e28b4d46d2144d307ab a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.36" ;

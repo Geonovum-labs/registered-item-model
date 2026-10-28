@@ -59,7 +59,7 @@ A REGISTER ITEM CLASS model with JSON/LD/RDF implementation as defined by ISO/FD
 
 Modular RDF implementation profile based on ISO/FDIS 19135:2026.
 
-### `ogc.rim.schemas.registered-item` — Registered Item
+### `ogc.rim.schemas.register-item` — Register Item
 
 **Type:** schema
 

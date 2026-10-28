@@ -7,7 +7,7 @@
       "xsd": "http://www.w3.org/2001/XMLSchema#",
       "ex": "https://example.org/rim/"
     },
-    "https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/registered-item/context.jsonld"
+    "https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-item/context.jsonld"
   ],
   "id": "https://example.org/rim/i",
   "type": "RegisterItem",

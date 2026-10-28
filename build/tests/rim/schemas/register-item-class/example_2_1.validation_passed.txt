@@ -1,5 +1,5 @@
 Validation report for ogc.rim.schemas.register-item-class - Register Item Class
-Generated 2026-10-28T18:11:07.513479+00:00
+Generated 2026-10-28T18:27:19.662288+00:00
 === Files ===
 Using example_2_1.ttl from examples
 Output Turtle example_2_1.ttl created
@@ -17,17 +17,17 @@ Validation result for _sources/core-ontology/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/core-ontology/shapes.shacl:
- - Shape rim:ConceptShape: *none*
  - Shape rim:RegisterSpecificationShape: *none*
- - Shape rim:TextShape/sh:or/rdf:first: *none*
  - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape rim:TextShape: *none*
+ - Shape rim:ConceptShape: *none*
+ - Shape rim:RegisterItemShape: *none*
  - Shape rim:RegisterItemClassShape: ex:uc
  - Shape rim:CommitmentShape: *none*
  - Shape rim:RegisterActionShape: *none*
- - Shape rim:ConceptVersionShape: *none*
- - Shape rim:RegisterItemShape: *none*
+ - Shape rim:TextShape/sh:or/rdf:first: *none*
  - Shape rim:RegisterShape: ex:r
+ - Shape rim:ConceptVersionShape: *none*
 
 === End SHACL ===
 

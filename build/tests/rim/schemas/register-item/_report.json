@@ -1,16 +1,16 @@
 {
-  "title": "Validation report for ogc.rim.schemas.registered-item - Registered Item",
-  "bblockName": "Registered Item",
-  "bblockId": "ogc.rim.schemas.registered-item",
-  "generated": "2026-10-28T18:11:07.619744+00:00",
+  "title": "Validation report for ogc.rim.schemas.register-item - Register Item",
+  "bblockName": "Register Item",
+  "bblockId": "ogc.rim.schemas.register-item",
+  "generated": "2026-10-28T18:27:19.808197+00:00",
   "result": true,
   "items": [
     {
       "source": {
         "type": "TEST_RESOURCE",
         "requireFail": true,
-        "filename": "_sources/schemas/registered-item/tests/item-class-untyped-fail.json",
-        "url": "https://geonovum-labs.github.io/registered-item-model/_sources/schemas/registered-item/tests/item-class-untyped-fail.json",
+        "filename": "_sources/schemas/register-item/tests/item-class-untyped-fail.json",
+        "url": "https://geonovum-labs.github.io/registered-item-model/_sources/schemas/register-item/tests/item-class-untyped-fail.json",
         "language": "json"
       },
       "result": true,
@@ -85,13 +85,24 @@
             {
               "shaclFile": "_sources/core-ontology/shapes.shacl",
               "focusNodes": {
-                "rim:ConceptShape": {
-                  "nodes": []
-                },
                 "rim:RegisterSpecificationShape": {
                   "nodes": []
                 },
                 "rim:TextShape": {
+                  "nodes": []
+                },
+                "rim:ConceptShape": {
+                  "nodes": []
+                },
+                "rim:TextShape/sh:or/rdf:first": {
+                  "nodes": []
+                },
+                "rim:RegisterItemShape": {
+                  "nodes": [
+                    "<https://example.org/rim/i-ungoverned>"
+                  ]
+                },
+                "rim:TextShape/sh:or/rdf:rest/rdf:first": {
                   "nodes": []
                 },
                 "rim:RegisterItemClassShape": {
@@ -100,29 +111,18 @@
                 "rim:CommitmentShape": {
                   "nodes": []
                 },
-                "rim:TextShape/sh:or/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
                 "rim:RegisterActionShape": {
                   "nodes": []
-                },
-                "rim:ConceptVersionShape": {
-                  "nodes": []
-                },
-                "rim:RegisterItemShape": {
-                  "nodes": [
-                    "<https://example.org/rim/i-ungoverned>"
-                  ]
                 },
                 "rim:RegisterShape": {
                   "nodes": []
                 },
-                "rim:TextShape/sh:or/rdf:first": {
+                "rim:ConceptVersionShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:RegisterItemClassShape: *none*\n - Shape rim:CommitmentShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:ConceptVersionShape: *none*\n - Shape rim:RegisterItemShape: <https://example.org/rim/i-ungoverned>\n - Shape rim:RegisterShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n"
+              "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:ConceptShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:RegisterItemShape: <https://example.org/rim/i-ungoverned>\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterItemClassShape: *none*\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:RegisterShape: *none*\n - Shape rim:ConceptVersionShape: *none*\n"
             }
           ]
         }
@@ -132,8 +132,8 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "build/tests/rim/schemas/registered-item/example_1_1.json",
-        "url": "https://geonovum-labs.github.io/registered-item-model/build/tests/rim/schemas/registered-item/example_1_1.json",
+        "filename": "build/tests/rim/schemas/register-item/example_1_1.json",
+        "url": "https://geonovum-labs.github.io/registered-item-model/build/tests/rim/schemas/register-item/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "application/json"
@@ -199,15 +199,26 @@
             {
               "shaclFile": "_sources/core-ontology/shapes.shacl",
               "focusNodes": {
+                "rim:RegisterSpecificationShape": {
+                  "nodes": []
+                },
+                "rim:TextShape": {
+                  "nodes": []
+                },
                 "rim:ConceptShape": {
                   "nodes": [
                     "ex:c"
                   ]
                 },
-                "rim:RegisterSpecificationShape": {
+                "rim:TextShape/sh:or/rdf:first": {
                   "nodes": []
                 },
-                "rim:TextShape": {
+                "rim:RegisterItemShape": {
+                  "nodes": [
+                    "ex:i"
+                  ]
+                },
+                "rim:TextShape/sh:or/rdf:rest/rdf:first": {
                   "nodes": []
                 },
                 "rim:RegisterItemClassShape": {
@@ -218,33 +229,22 @@
                 "rim:CommitmentShape": {
                   "nodes": []
                 },
-                "rim:TextShape/sh:or/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
                 "rim:RegisterActionShape": {
                   "nodes": []
-                },
-                "rim:ConceptVersionShape": {
-                  "nodes": [
-                    "ex:cv"
-                  ]
-                },
-                "rim:RegisterItemShape": {
-                  "nodes": [
-                    "ex:i"
-                  ]
                 },
                 "rim:RegisterShape": {
                   "nodes": [
                     "ex:r"
                   ]
                 },
-                "rim:TextShape/sh:or/rdf:first": {
-                  "nodes": []
+                "rim:ConceptVersionShape": {
+                  "nodes": [
+                    "ex:cv"
+                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:ConceptShape: ex:c\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:RegisterItemClassShape: ex:uc\n - Shape rim:CommitmentShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:ConceptVersionShape: ex:cv\n - Shape rim:RegisterItemShape: ex:i\n - Shape rim:RegisterShape: ex:r\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n"
+              "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:ConceptShape: ex:c\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:RegisterItemShape: ex:i\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterItemClassShape: ex:uc\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:RegisterShape: ex:r\n - Shape rim:ConceptVersionShape: ex:cv\n"
             }
           ]
         }
@@ -254,8 +254,8 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "build/tests/rim/schemas/registered-item/example_2_1.ttl",
-        "url": "https://geonovum-labs.github.io/registered-item-model/build/tests/rim/schemas/registered-item/example_2_1.ttl",
+        "filename": "build/tests/rim/schemas/register-item/example_2_1.ttl",
+        "url": "https://geonovum-labs.github.io/registered-item-model/build/tests/rim/schemas/register-item/example_2_1.ttl",
         "exampleIndex": 2,
         "snippetIndex": 1,
         "language": "text/turtle"
@@ -308,15 +308,26 @@
             {
               "shaclFile": "_sources/core-ontology/shapes.shacl",
               "focusNodes": {
+                "rim:RegisterSpecificationShape": {
+                  "nodes": []
+                },
+                "rim:TextShape": {
+                  "nodes": []
+                },
                 "rim:ConceptShape": {
                   "nodes": [
                     "ex:c"
                   ]
                 },
-                "rim:RegisterSpecificationShape": {
+                "rim:TextShape/sh:or/rdf:first": {
                   "nodes": []
                 },
-                "rim:TextShape": {
+                "rim:RegisterItemShape": {
+                  "nodes": [
+                    "ex:i"
+                  ]
+                },
+                "rim:TextShape/sh:or/rdf:rest/rdf:first": {
                   "nodes": []
                 },
                 "rim:RegisterItemClassShape": {
@@ -327,33 +338,22 @@
                 "rim:CommitmentShape": {
                   "nodes": []
                 },
-                "rim:TextShape/sh:or/rdf:rest/rdf:first": {
-                  "nodes": []
-                },
                 "rim:RegisterActionShape": {
                   "nodes": []
-                },
-                "rim:ConceptVersionShape": {
-                  "nodes": [
-                    "ex:cv"
-                  ]
-                },
-                "rim:RegisterItemShape": {
-                  "nodes": [
-                    "ex:i"
-                  ]
                 },
                 "rim:RegisterShape": {
                   "nodes": [
                     "ex:r"
                   ]
                 },
-                "rim:TextShape/sh:or/rdf:first": {
-                  "nodes": []
+                "rim:ConceptVersionShape": {
+                  "nodes": [
+                    "ex:cv"
+                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:ConceptShape: ex:c\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:RegisterItemClassShape: ex:uc\n - Shape rim:CommitmentShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:ConceptVersionShape: ex:cv\n - Shape rim:RegisterItemShape: ex:i\n - Shape rim:RegisterShape: ex:r\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n"
+              "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:ConceptShape: ex:c\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:RegisterItemShape: ex:i\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterItemClassShape: ex:uc\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:RegisterShape: ex:r\n - Shape rim:ConceptVersionShape: ex:cv\n"
             }
           ]
         }

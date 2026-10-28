@@ -10,7 +10,7 @@
       "title": "Validation report for ogc.rim.core-ontology - Registered Item Model",
       "bblockName": "Registered Item Model",
       "bblockId": "ogc.rim.core-ontology",
-      "generated": "2026-10-28T18:11:07.379886+00:00",
+      "generated": "2026-10-28T18:27:19.472862+00:00",
       "result": true,
       "items": [
         {
@@ -71,11 +71,6 @@
                 {
                   "shaclFile": "_sources/core-ontology/shapes.shacl",
                   "focusNodes": {
-                    "rim:ConceptShape": {
-                      "nodes": [
-                        "ex:quercusRoburConcept"
-                      ]
-                    },
                     "rim:RegisterSpecificationShape": {
                       "nodes": [
                         "ex:plantRegisterSpec"
@@ -87,27 +82,9 @@
                     "rim:TextShape": {
                       "nodes": []
                     },
-                    "rim:RegisterItemClassShape": {
+                    "rim:ConceptShape": {
                       "nodes": [
-                        "ex:taxonItemClass"
-                      ]
-                    },
-                    "rim:CommitmentShape": {
-                      "nodes": [
-                        "ex:persistenceCommitmentA"
-                      ]
-                    },
-                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
-                    "rim:RegisterActionShape": {
-                      "nodes": [
-                        "ex:action2024-06"
-                      ]
-                    },
-                    "rim:ConceptVersionShape": {
-                      "nodes": [
-                        "ex:quercusRoburV2"
+                        "ex:quercusRoburConcept"
                       ]
                     },
                     "rim:RegisterItemShape": {
@@ -115,14 +92,37 @@
                         "ex:quercusRoburItem"
                       ]
                     },
+                    "rim:RegisterItemClassShape": {
+                      "nodes": [
+                        "ex:taxonItemClass"
+                      ]
+                    },
+                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
+                    "rim:CommitmentShape": {
+                      "nodes": [
+                        "ex:persistenceCommitmentA"
+                      ]
+                    },
+                    "rim:RegisterActionShape": {
+                      "nodes": [
+                        "ex:action2024-06"
+                      ]
+                    },
                     "rim:RegisterShape": {
                       "nodes": [
                         "ex:plantRegister"
                       ]
+                    },
+                    "rim:ConceptVersionShape": {
+                      "nodes": [
+                        "ex:quercusRoburV2"
+                      ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:ConceptShape: ex:quercusRoburConcept\n - Shape rim:RegisterSpecificationShape: ex:plantRegisterSpec\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:RegisterItemClassShape: ex:taxonItemClass\n - Shape rim:CommitmentShape: ex:persistenceCommitmentA\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterActionShape: ex:action2024-06\n - Shape rim:ConceptVersionShape: ex:quercusRoburV2\n - Shape rim:RegisterItemShape: ex:quercusRoburItem\n - Shape rim:RegisterShape: ex:plantRegister\n"
+                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: ex:plantRegisterSpec\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:ConceptShape: ex:quercusRoburConcept\n - Shape rim:RegisterItemShape: ex:quercusRoburItem\n - Shape rim:RegisterItemClassShape: ex:taxonItemClass\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:CommitmentShape: ex:persistenceCommitmentA\n - Shape rim:RegisterActionShape: ex:action2024-06\n - Shape rim:RegisterShape: ex:plantRegister\n - Shape rim:ConceptVersionShape: ex:quercusRoburV2\n"
                 }
               ]
             }
@@ -186,9 +186,6 @@
                 {
                   "shaclFile": "_sources/core-ontology/shapes.shacl",
                   "focusNodes": {
-                    "rim:ConceptShape": {
-                      "nodes": []
-                    },
                     "rim:RegisterSpecificationShape": {
                       "nodes": []
                     },
@@ -198,21 +195,7 @@
                     "rim:TextShape": {
                       "nodes": []
                     },
-                    "rim:RegisterItemClassShape": {
-                      "nodes": [
-                        "ex:codeListItemClass"
-                      ]
-                    },
-                    "rim:CommitmentShape": {
-                      "nodes": []
-                    },
-                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
-                    "rim:RegisterActionShape": {
-                      "nodes": []
-                    },
-                    "rim:ConceptVersionShape": {
+                    "rim:ConceptShape": {
                       "nodes": []
                     },
                     "rim:RegisterItemShape": {
@@ -220,12 +203,29 @@
                         "ex:code42"
                       ]
                     },
+                    "rim:RegisterItemClassShape": {
+                      "nodes": [
+                        "ex:codeListItemClass"
+                      ]
+                    },
+                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
+                    "rim:CommitmentShape": {
+                      "nodes": []
+                    },
+                    "rim:RegisterActionShape": {
+                      "nodes": []
+                    },
                     "rim:RegisterShape": {
+                      "nodes": []
+                    },
+                    "rim:ConceptVersionShape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:RegisterItemClassShape: ex:codeListItemClass\n - Shape rim:CommitmentShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:ConceptVersionShape: *none*\n - Shape rim:RegisterItemShape: ex:code42\n - Shape rim:RegisterShape: *none*\n"
+                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterItemShape: ex:code42\n - Shape rim:RegisterItemClassShape: ex:codeListItemClass\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:RegisterShape: *none*\n - Shape rim:ConceptVersionShape: *none*\n"
                 }
               ]
             }
@@ -243,7 +243,7 @@
       "title": "Validation report for ogc.rim.schemas.concept-version - Concept Version",
       "bblockName": "Concept Version",
       "bblockId": "ogc.rim.schemas.concept-version",
-      "generated": "2026-10-28T18:11:07.424521+00:00",
+      "generated": "2026-10-28T18:27:19.536664+00:00",
       "result": true,
       "items": [
         {
@@ -317,21 +317,21 @@
                 {
                   "shaclFile": "_sources/core-ontology/shapes.shacl",
                   "focusNodes": {
-                    "rim:ConceptShape": {
-                      "nodes": [
-                        "ex:c"
-                      ]
-                    },
                     "rim:RegisterSpecificationShape": {
-                      "nodes": []
-                    },
-                    "rim:TextShape": {
                       "nodes": []
                     },
                     "rim:TextShape/sh:or/rdf:first": {
                       "nodes": []
                     },
-                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
+                    "rim:TextShape": {
+                      "nodes": []
+                    },
+                    "rim:ConceptShape": {
+                      "nodes": [
+                        "ex:c"
+                      ]
+                    },
+                    "rim:RegisterItemShape": {
                       "nodes": []
                     },
                     "rim:RegisterItemClassShape": {
@@ -343,20 +343,20 @@
                     "rim:RegisterActionShape": {
                       "nodes": []
                     },
-                    "rim:ConceptVersionShape": {
-                      "nodes": [
-                        "ex:cv"
-                      ]
-                    },
-                    "rim:RegisterItemShape": {
+                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
                       "nodes": []
                     },
                     "rim:RegisterShape": {
                       "nodes": []
+                    },
+                    "rim:ConceptVersionShape": {
+                      "nodes": [
+                        "ex:cv"
+                      ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:ConceptShape: ex:c\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterItemClassShape: *none*\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:ConceptVersionShape: ex:cv\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:RegisterShape: *none*\n"
+                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:ConceptShape: ex:c\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:RegisterItemClassShape: *none*\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterShape: *none*\n - Shape rim:ConceptVersionShape: ex:cv\n"
                 }
               ]
             }
@@ -420,21 +420,21 @@
                 {
                   "shaclFile": "_sources/core-ontology/shapes.shacl",
                   "focusNodes": {
-                    "rim:ConceptShape": {
-                      "nodes": [
-                        "ex:c"
-                      ]
-                    },
                     "rim:RegisterSpecificationShape": {
-                      "nodes": []
-                    },
-                    "rim:TextShape": {
                       "nodes": []
                     },
                     "rim:TextShape/sh:or/rdf:first": {
                       "nodes": []
                     },
-                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
+                    "rim:TextShape": {
+                      "nodes": []
+                    },
+                    "rim:ConceptShape": {
+                      "nodes": [
+                        "ex:c"
+                      ]
+                    },
+                    "rim:RegisterItemShape": {
                       "nodes": []
                     },
                     "rim:RegisterItemClassShape": {
@@ -446,20 +446,20 @@
                     "rim:RegisterActionShape": {
                       "nodes": []
                     },
-                    "rim:ConceptVersionShape": {
-                      "nodes": [
-                        "ex:cv"
-                      ]
-                    },
-                    "rim:RegisterItemShape": {
+                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
                       "nodes": []
                     },
                     "rim:RegisterShape": {
                       "nodes": []
+                    },
+                    "rim:ConceptVersionShape": {
+                      "nodes": [
+                        "ex:cv"
+                      ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:ConceptShape: ex:c\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterItemClassShape: *none*\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:ConceptVersionShape: ex:cv\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:RegisterShape: *none*\n"
+                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:ConceptShape: ex:c\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:RegisterItemClassShape: *none*\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterShape: *none*\n - Shape rim:ConceptVersionShape: ex:cv\n"
                 }
               ]
             }
@@ -477,7 +477,7 @@
       "title": "Validation report for ogc.rim.schemas.register - Register",
       "bblockName": "Register",
       "bblockId": "ogc.rim.schemas.register",
-      "generated": "2026-10-28T18:11:07.470053+00:00",
+      "generated": "2026-10-28T18:27:19.601412+00:00",
       "result": true,
       "items": [
         {
@@ -551,9 +551,6 @@
                 {
                   "shaclFile": "_sources/core-ontology/shapes.shacl",
                   "focusNodes": {
-                    "rim:ConceptShape": {
-                      "nodes": []
-                    },
                     "rim:RegisterSpecificationShape": {
                       "nodes": []
                     },
@@ -563,32 +560,35 @@
                     "rim:TextShape/sh:or/rdf:first": {
                       "nodes": []
                     },
+                    "rim:ConceptShape": {
+                      "nodes": []
+                    },
+                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
+                    "rim:RegisterItemShape": {
+                      "nodes": []
+                    },
                     "rim:RegisterItemClassShape": {
                       "nodes": []
                     },
                     "rim:CommitmentShape": {
                       "nodes": []
                     },
-                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
                     "rim:RegisterActionShape": {
-                      "nodes": []
-                    },
-                    "rim:ConceptVersionShape": {
-                      "nodes": []
-                    },
-                    "rim:RegisterItemShape": {
                       "nodes": []
                     },
                     "rim:RegisterShape": {
                       "nodes": [
                         "ex:r"
                       ]
+                    },
+                    "rim:ConceptVersionShape": {
+                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:RegisterItemClassShape: *none*\n - Shape rim:CommitmentShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:ConceptVersionShape: *none*\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:RegisterShape: ex:r\n"
+                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:ConceptShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:RegisterItemClassShape: *none*\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:RegisterShape: ex:r\n - Shape rim:ConceptVersionShape: *none*\n"
                 }
               ]
             }
@@ -652,9 +652,6 @@
                 {
                   "shaclFile": "_sources/core-ontology/shapes.shacl",
                   "focusNodes": {
-                    "rim:ConceptShape": {
-                      "nodes": []
-                    },
                     "rim:RegisterSpecificationShape": {
                       "nodes": []
                     },
@@ -664,32 +661,35 @@
                     "rim:TextShape/sh:or/rdf:first": {
                       "nodes": []
                     },
+                    "rim:ConceptShape": {
+                      "nodes": []
+                    },
+                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
+                    "rim:RegisterItemShape": {
+                      "nodes": []
+                    },
                     "rim:RegisterItemClassShape": {
                       "nodes": []
                     },
                     "rim:CommitmentShape": {
                       "nodes": []
                     },
-                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
                     "rim:RegisterActionShape": {
-                      "nodes": []
-                    },
-                    "rim:ConceptVersionShape": {
-                      "nodes": []
-                    },
-                    "rim:RegisterItemShape": {
                       "nodes": []
                     },
                     "rim:RegisterShape": {
                       "nodes": [
                         "ex:r"
                       ]
+                    },
+                    "rim:ConceptVersionShape": {
+                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:RegisterItemClassShape: *none*\n - Shape rim:CommitmentShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:ConceptVersionShape: *none*\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:RegisterShape: ex:r\n"
+                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:ConceptShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:RegisterItemClassShape: *none*\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:RegisterShape: ex:r\n - Shape rim:ConceptVersionShape: *none*\n"
                 }
               ]
             }
@@ -707,7 +707,7 @@
       "title": "Validation report for ogc.rim.schemas.register-item-class - Register Item Class",
       "bblockName": "Register Item Class",
       "bblockId": "ogc.rim.schemas.register-item-class",
-      "generated": "2026-10-28T18:11:07.513528+00:00",
+      "generated": "2026-10-28T18:27:19.662339+00:00",
       "result": true,
       "items": [
         {
@@ -781,19 +781,19 @@
                 {
                   "shaclFile": "_sources/core-ontology/shapes.shacl",
                   "focusNodes": {
-                    "rim:ConceptShape": {
-                      "nodes": []
-                    },
                     "rim:RegisterSpecificationShape": {
-                      "nodes": []
-                    },
-                    "rim:TextShape/sh:or/rdf:first": {
                       "nodes": []
                     },
                     "rim:TextShape/sh:or/rdf:rest/rdf:first": {
                       "nodes": []
                     },
                     "rim:TextShape": {
+                      "nodes": []
+                    },
+                    "rim:ConceptShape": {
+                      "nodes": []
+                    },
+                    "rim:RegisterItemShape": {
                       "nodes": []
                     },
                     "rim:RegisterItemClassShape": {
@@ -807,20 +807,20 @@
                     "rim:RegisterActionShape": {
                       "nodes": []
                     },
-                    "rim:ConceptVersionShape": {
-                      "nodes": []
-                    },
-                    "rim:RegisterItemShape": {
+                    "rim:TextShape/sh:or/rdf:first": {
                       "nodes": []
                     },
                     "rim:RegisterShape": {
                       "nodes": [
                         "ex:r"
                       ]
+                    },
+                    "rim:ConceptVersionShape": {
+                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:RegisterItemClassShape: ex:uc\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:ConceptVersionShape: *none*\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:RegisterShape: ex:r\n"
+                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:RegisterItemClassShape: ex:uc\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:RegisterShape: ex:r\n - Shape rim:ConceptVersionShape: *none*\n"
                 }
               ]
             }
@@ -884,19 +884,19 @@
                 {
                   "shaclFile": "_sources/core-ontology/shapes.shacl",
                   "focusNodes": {
-                    "rim:ConceptShape": {
-                      "nodes": []
-                    },
                     "rim:RegisterSpecificationShape": {
-                      "nodes": []
-                    },
-                    "rim:TextShape/sh:or/rdf:first": {
                       "nodes": []
                     },
                     "rim:TextShape/sh:or/rdf:rest/rdf:first": {
                       "nodes": []
                     },
                     "rim:TextShape": {
+                      "nodes": []
+                    },
+                    "rim:ConceptShape": {
+                      "nodes": []
+                    },
+                    "rim:RegisterItemShape": {
                       "nodes": []
                     },
                     "rim:RegisterItemClassShape": {
@@ -910,20 +910,20 @@
                     "rim:RegisterActionShape": {
                       "nodes": []
                     },
-                    "rim:ConceptVersionShape": {
-                      "nodes": []
-                    },
-                    "rim:RegisterItemShape": {
+                    "rim:TextShape/sh:or/rdf:first": {
                       "nodes": []
                     },
                     "rim:RegisterShape": {
                       "nodes": [
                         "ex:r"
                       ]
+                    },
+                    "rim:ConceptVersionShape": {
+                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:RegisterItemClassShape: ex:uc\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:ConceptVersionShape: *none*\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:RegisterShape: ex:r\n"
+                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:RegisterItemClassShape: ex:uc\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:RegisterShape: ex:r\n - Shape rim:ConceptVersionShape: *none*\n"
                 }
               ]
             }
@@ -941,7 +941,7 @@
       "title": "Validation report for ogc.rim.schemas.register-specification - Register Specification",
       "bblockName": "Register Specification",
       "bblockId": "ogc.rim.schemas.register-specification",
-      "generated": "2026-10-28T18:11:07.559924+00:00",
+      "generated": "2026-10-28T18:27:19.723666+00:00",
       "result": true,
       "items": [
         {
@@ -1015,9 +1015,6 @@
                 {
                   "shaclFile": "_sources/core-ontology/shapes.shacl",
                   "focusNodes": {
-                    "rim:ConceptShape": {
-                      "nodes": []
-                    },
                     "rim:RegisterSpecificationShape": {
                       "nodes": [
                         "ex:s"
@@ -1032,6 +1029,12 @@
                     "rim:TextShape": {
                       "nodes": []
                     },
+                    "rim:ConceptShape": {
+                      "nodes": []
+                    },
+                    "rim:RegisterItemShape": {
+                      "nodes": []
+                    },
                     "rim:RegisterItemClassShape": {
                       "nodes": []
                     },
@@ -1044,18 +1047,15 @@
                     "rim:RegisterActionShape": {
                       "nodes": []
                     },
-                    "rim:ConceptVersionShape": {
-                      "nodes": []
-                    },
-                    "rim:RegisterItemShape": {
-                      "nodes": []
-                    },
                     "rim:RegisterShape": {
+                      "nodes": []
+                    },
+                    "rim:ConceptVersionShape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterSpecificationShape: ex:s\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:RegisterItemClassShape: *none*\n - Shape rim:CommitmentShape: ex:s/rim:hasCommitment,ex:s/rim:hasCommitment\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:ConceptVersionShape: *none*\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:RegisterShape: *none*\n"
+                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: ex:s\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:RegisterItemClassShape: *none*\n - Shape rim:CommitmentShape: ex:s/rim:hasCommitment,ex:s/rim:hasCommitment\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:RegisterShape: *none*\n - Shape rim:ConceptVersionShape: *none*\n"
                 }
               ]
             }
@@ -1119,9 +1119,6 @@
                 {
                   "shaclFile": "_sources/core-ontology/shapes.shacl",
                   "focusNodes": {
-                    "rim:ConceptShape": {
-                      "nodes": []
-                    },
                     "rim:RegisterSpecificationShape": {
                       "nodes": [
                         "ex:s"
@@ -1136,6 +1133,12 @@
                     "rim:TextShape": {
                       "nodes": []
                     },
+                    "rim:ConceptShape": {
+                      "nodes": []
+                    },
+                    "rim:RegisterItemShape": {
+                      "nodes": []
+                    },
                     "rim:RegisterItemClassShape": {
                       "nodes": []
                     },
@@ -1147,20 +1150,17 @@
                     "rim:RegisterActionShape": {
                       "nodes": []
                     },
-                    "rim:ConceptVersionShape": {
-                      "nodes": []
-                    },
-                    "rim:RegisterItemShape": {
-                      "nodes": []
-                    },
                     "rim:RegisterShape": {
                       "nodes": [
                         "ex:r"
                       ]
+                    },
+                    "rim:ConceptVersionShape": {
+                      "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterSpecificationShape: ex:s\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:RegisterItemClassShape: *none*\n - Shape rim:CommitmentShape: ex:s/rim:hasCommitment\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:ConceptVersionShape: *none*\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:RegisterShape: ex:r\n"
+                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: ex:s\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterItemShape: *none*\n - Shape rim:RegisterItemClassShape: *none*\n - Shape rim:CommitmentShape: ex:s/rim:hasCommitment\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:RegisterShape: ex:r\n - Shape rim:ConceptVersionShape: *none*\n"
                 }
               ]
             }
@@ -1174,19 +1174,19 @@
         "failed": 0
       }
     },
-    "ogc.rim.schemas.registered-item": {
-      "title": "Validation report for ogc.rim.schemas.registered-item - Registered Item",
-      "bblockName": "Registered Item",
-      "bblockId": "ogc.rim.schemas.registered-item",
-      "generated": "2026-10-28T18:11:07.619744+00:00",
+    "ogc.rim.schemas.register-item": {
+      "title": "Validation report for ogc.rim.schemas.register-item - Register Item",
+      "bblockName": "Register Item",
+      "bblockId": "ogc.rim.schemas.register-item",
+      "generated": "2026-10-28T18:27:19.808197+00:00",
       "result": true,
       "items": [
         {
           "source": {
             "type": "TEST_RESOURCE",
             "requireFail": true,
-            "filename": "_sources/schemas/registered-item/tests/item-class-untyped-fail.json",
-            "url": "https://geonovum-labs.github.io/registered-item-model/_sources/schemas/registered-item/tests/item-class-untyped-fail.json",
+            "filename": "_sources/schemas/register-item/tests/item-class-untyped-fail.json",
+            "url": "https://geonovum-labs.github.io/registered-item-model/_sources/schemas/register-item/tests/item-class-untyped-fail.json",
             "language": "json"
           },
           "result": true,
@@ -1261,13 +1261,24 @@
                 {
                   "shaclFile": "_sources/core-ontology/shapes.shacl",
                   "focusNodes": {
-                    "rim:ConceptShape": {
-                      "nodes": []
-                    },
                     "rim:RegisterSpecificationShape": {
                       "nodes": []
                     },
                     "rim:TextShape": {
+                      "nodes": []
+                    },
+                    "rim:ConceptShape": {
+                      "nodes": []
+                    },
+                    "rim:TextShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "rim:RegisterItemShape": {
+                      "nodes": [
+                        "<https://example.org/rim/i-ungoverned>"
+                      ]
+                    },
+                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
                       "nodes": []
                     },
                     "rim:RegisterItemClassShape": {
@@ -1276,29 +1287,18 @@
                     "rim:CommitmentShape": {
                       "nodes": []
                     },
-                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
                     "rim:RegisterActionShape": {
                       "nodes": []
-                    },
-                    "rim:ConceptVersionShape": {
-                      "nodes": []
-                    },
-                    "rim:RegisterItemShape": {
-                      "nodes": [
-                        "<https://example.org/rim/i-ungoverned>"
-                      ]
                     },
                     "rim:RegisterShape": {
                       "nodes": []
                     },
-                    "rim:TextShape/sh:or/rdf:first": {
+                    "rim:ConceptVersionShape": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:RegisterItemClassShape: *none*\n - Shape rim:CommitmentShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:ConceptVersionShape: *none*\n - Shape rim:RegisterItemShape: <https://example.org/rim/i-ungoverned>\n - Shape rim:RegisterShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n"
+                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:ConceptShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:RegisterItemShape: <https://example.org/rim/i-ungoverned>\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterItemClassShape: *none*\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:RegisterShape: *none*\n - Shape rim:ConceptVersionShape: *none*\n"
                 }
               ]
             }
@@ -1308,8 +1308,8 @@
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/rim/schemas/registered-item/example_1_1.json",
-            "url": "https://geonovum-labs.github.io/registered-item-model/build/tests/rim/schemas/registered-item/example_1_1.json",
+            "filename": "build/tests/rim/schemas/register-item/example_1_1.json",
+            "url": "https://geonovum-labs.github.io/registered-item-model/build/tests/rim/schemas/register-item/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
@@ -1375,15 +1375,26 @@
                 {
                   "shaclFile": "_sources/core-ontology/shapes.shacl",
                   "focusNodes": {
+                    "rim:RegisterSpecificationShape": {
+                      "nodes": []
+                    },
+                    "rim:TextShape": {
+                      "nodes": []
+                    },
                     "rim:ConceptShape": {
                       "nodes": [
                         "ex:c"
                       ]
                     },
-                    "rim:RegisterSpecificationShape": {
+                    "rim:TextShape/sh:or/rdf:first": {
                       "nodes": []
                     },
-                    "rim:TextShape": {
+                    "rim:RegisterItemShape": {
+                      "nodes": [
+                        "ex:i"
+                      ]
+                    },
+                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
                       "nodes": []
                     },
                     "rim:RegisterItemClassShape": {
@@ -1394,33 +1405,22 @@
                     "rim:CommitmentShape": {
                       "nodes": []
                     },
-                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
                     "rim:RegisterActionShape": {
                       "nodes": []
-                    },
-                    "rim:ConceptVersionShape": {
-                      "nodes": [
-                        "ex:cv"
-                      ]
-                    },
-                    "rim:RegisterItemShape": {
-                      "nodes": [
-                        "ex:i"
-                      ]
                     },
                     "rim:RegisterShape": {
                       "nodes": [
                         "ex:r"
                       ]
                     },
-                    "rim:TextShape/sh:or/rdf:first": {
-                      "nodes": []
+                    "rim:ConceptVersionShape": {
+                      "nodes": [
+                        "ex:cv"
+                      ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:ConceptShape: ex:c\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:RegisterItemClassShape: ex:uc\n - Shape rim:CommitmentShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:ConceptVersionShape: ex:cv\n - Shape rim:RegisterItemShape: ex:i\n - Shape rim:RegisterShape: ex:r\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n"
+                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:ConceptShape: ex:c\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:RegisterItemShape: ex:i\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterItemClassShape: ex:uc\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:RegisterShape: ex:r\n - Shape rim:ConceptVersionShape: ex:cv\n"
                 }
               ]
             }
@@ -1430,8 +1430,8 @@
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/rim/schemas/registered-item/example_2_1.ttl",
-            "url": "https://geonovum-labs.github.io/registered-item-model/build/tests/rim/schemas/registered-item/example_2_1.ttl",
+            "filename": "build/tests/rim/schemas/register-item/example_2_1.ttl",
+            "url": "https://geonovum-labs.github.io/registered-item-model/build/tests/rim/schemas/register-item/example_2_1.ttl",
             "exampleIndex": 2,
             "snippetIndex": 1,
             "language": "text/turtle"
@@ -1484,15 +1484,26 @@
                 {
                   "shaclFile": "_sources/core-ontology/shapes.shacl",
                   "focusNodes": {
+                    "rim:RegisterSpecificationShape": {
+                      "nodes": []
+                    },
+                    "rim:TextShape": {
+                      "nodes": []
+                    },
                     "rim:ConceptShape": {
                       "nodes": [
                         "ex:c"
                       ]
                     },
-                    "rim:RegisterSpecificationShape": {
+                    "rim:TextShape/sh:or/rdf:first": {
                       "nodes": []
                     },
-                    "rim:TextShape": {
+                    "rim:RegisterItemShape": {
+                      "nodes": [
+                        "ex:i"
+                      ]
+                    },
+                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
                       "nodes": []
                     },
                     "rim:RegisterItemClassShape": {
@@ -1503,33 +1514,22 @@
                     "rim:CommitmentShape": {
                       "nodes": []
                     },
-                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    },
                     "rim:RegisterActionShape": {
                       "nodes": []
-                    },
-                    "rim:ConceptVersionShape": {
-                      "nodes": [
-                        "ex:cv"
-                      ]
-                    },
-                    "rim:RegisterItemShape": {
-                      "nodes": [
-                        "ex:i"
-                      ]
                     },
                     "rim:RegisterShape": {
                       "nodes": [
                         "ex:r"
                       ]
                     },
-                    "rim:TextShape/sh:or/rdf:first": {
-                      "nodes": []
+                    "rim:ConceptVersionShape": {
+                      "nodes": [
+                        "ex:cv"
+                      ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:ConceptShape: ex:c\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:RegisterItemClassShape: ex:uc\n - Shape rim:CommitmentShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:ConceptVersionShape: ex:cv\n - Shape rim:RegisterItemShape: ex:i\n - Shape rim:RegisterShape: ex:r\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n"
+                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:ConceptShape: ex:c\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:RegisterItemShape: ex:i\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterItemClassShape: ex:uc\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: *none*\n - Shape rim:RegisterShape: ex:r\n - Shape rim:ConceptVersionShape: ex:cv\n"
                 }
               ]
             }
@@ -1547,7 +1547,7 @@
       "title": "Validation report for ogc.rim.schemas.register-action - Register Action",
       "bblockName": "Register Action",
       "bblockId": "ogc.rim.schemas.register-action",
-      "generated": "2026-10-28T18:11:08.569471+00:00",
+      "generated": "2026-10-28T18:27:21.143229+00:00",
       "result": true,
       "items": [
         {
@@ -1609,7 +1609,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - /github/workspace/_sources/core-ontology/ontology.ttl\n - https://www.w3.org/ns/prov-o"
+                  "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - https://www.w3.org/ns/prov-o\n - /github/workspace/_sources/core-ontology/ontology.ttl"
                 },
                 {
                   "op": "shacl-report",
@@ -1621,103 +1621,103 @@
                 {
                   "shaclFile": "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl",
                   "focusNodes": {
-                    "<https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadActivity>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadUsage>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Plan-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-influencer>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Invalidation-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadMember>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Start-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-entity>": {
+                    "<https://www.ogc.org/rules/prov/#prop-invalidated>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-used>": {
+                    "<https://www.ogc.org/rules/prov/#prop-atLocation>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>": {
+                    "<https://www.ogc.org/rules/prov/#prop-entity>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>": {
+                    "<https://www.ogc.org/rules/prov/#prop-generated>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#Activity-shape>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-wasStartedBy>": {
+                    "<https://www.ogc.org/rules/prov/#Bundle-shape>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-atLocation>": {
+                    "<https://www.ogc.org/rules/prov/#prop-alternateOf>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-agent>": {
+                    "<https://www.ogc.org/rules/prov/#Invalidation-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedStart>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Collection-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#End-shape>": {
+                    "<https://www.ogc.org/rules/prov/#prop-wasEndedBy>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>": {
                       "nodes": []
                     },
+                    "<https://www.ogc.org/rules/prov/#prop-wasInformedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#End-shape>": {
+                      "nodes": []
+                    },
                     "<https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#Bundle-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedUsage>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Usage-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-specializationOf>": {
-                      "nodes": []
-                    },
                     "<https://www.ogc.org/rules/prov/#Generation-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Entity-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadActivity>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadMember>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedRevision>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasAttributedTo>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Plan-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedStart>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasRevisionOf>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-agent>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadGeneration>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-activity>": {
@@ -1726,69 +1726,69 @@
                     "<https://www.ogc.org/rules/prov/#prop-hadPrimarySource>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasInformedBy>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadPlan>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedRevision>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Entity-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadGeneration>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-invalidated>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-generated>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasRevisionOf>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadRole>": {
+                    "<https://www.ogc.org/rules/prov/#prop-specializationOf>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-wasAttributedTo>": {
+                    "<https://www.ogc.org/rules/prov/#prop-hadPlan>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-wasEndedBy>": {
+                    "<https://www.ogc.org/rules/prov/#prop-hadUsage>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-alternateOf>": {
+                    "<https://www.ogc.org/rules/prov/#Usage-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedEnd>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-influencer>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Collection-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-used>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Start-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasStartedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadRole>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#EmptyCollection-shape>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedEnd>": {
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedUsage>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadActivity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Plan-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-influencer>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Invalidation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadMember>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Start-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-entity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-used>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Activity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasStartedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-atLocation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-agent>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedStart>: *none*\n - Shape <https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Collection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#End-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Bundle-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Usage-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-specializationOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Generation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-activity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInformedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPlan>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedRevision>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Entity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-invalidated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-generated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasRevisionOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadRole>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAttributedTo>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasEndedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-alternateOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#EmptyCollection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedEnd>: *none*\n"
+                  "message": "Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:\n - Shape <https://www.ogc.org/rules/prov/#prop-invalidated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-atLocation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-entity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-generated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Activity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Bundle-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-alternateOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Invalidation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasEndedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInformedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#End-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Generation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Entity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadActivity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadMember>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedRevision>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAttributedTo>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Plan-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedStart>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasRevisionOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-agent>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-activity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-specializationOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPlan>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Usage-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedEnd>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>: *none*\n - Shape <https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-influencer>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Collection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-used>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Start-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasStartedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadRole>: *none*\n - Shape <https://www.ogc.org/rules/prov/#EmptyCollection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>: *none*\n"
                 },
                 {
                   "op": "shacl-report",
@@ -1800,17 +1800,22 @@
                 {
                   "shaclFile": "_sources/core-ontology/shapes.shacl",
                   "focusNodes": {
-                    "rim:TextShape/sh:or/rdf:first": {
-                      "nodes": []
-                    },
-                    "rim:ConceptShape": {
-                      "nodes": []
-                    },
                     "rim:RegisterSpecificationShape": {
                       "nodes": []
                     },
                     "rim:TextShape": {
                       "nodes": []
+                    },
+                    "rim:ConceptShape": {
+                      "nodes": []
+                    },
+                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
+                    "rim:RegisterItemShape": {
+                      "nodes": [
+                        "ex:i"
+                      ]
                     },
                     "rim:RegisterItemClassShape": {
                       "nodes": [
@@ -1825,23 +1830,18 @@
                         "ex:a"
                       ]
                     },
-                    "rim:ConceptVersionShape": {
-                      "nodes": []
-                    },
-                    "rim:RegisterItemShape": {
-                      "nodes": [
-                        "ex:i"
-                      ]
-                    },
                     "rim:RegisterShape": {
                       "nodes": []
                     },
-                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
+                    "rim:ConceptVersionShape": {
+                      "nodes": []
+                    },
+                    "rim:TextShape/sh:or/rdf:first": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:RegisterItemClassShape: ex:uc\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: ex:a\n - Shape rim:ConceptVersionShape: *none*\n - Shape rim:RegisterItemShape: ex:i\n - Shape rim:RegisterShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n"
+                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:ConceptShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterItemShape: ex:i\n - Shape rim:RegisterItemClassShape: ex:uc\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: ex:a\n - Shape rim:RegisterShape: *none*\n - Shape rim:ConceptVersionShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n"
                 }
               ]
             }
@@ -1893,7 +1893,7 @@
               "entries": [
                 {
                   "isError": false,
-                  "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - /github/workspace/_sources/core-ontology/ontology.ttl\n - https://www.w3.org/ns/prov-o"
+                  "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - https://www.w3.org/ns/prov-o\n - /github/workspace/_sources/core-ontology/ontology.ttl"
                 },
                 {
                   "op": "shacl-report",
@@ -1905,103 +1905,103 @@
                 {
                   "shaclFile": "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl",
                   "focusNodes": {
-                    "<https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadActivity>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadUsage>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Plan-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-influencer>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Invalidation-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadMember>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Start-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-entity>": {
+                    "<https://www.ogc.org/rules/prov/#prop-invalidated>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-used>": {
+                    "<https://www.ogc.org/rules/prov/#prop-atLocation>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>": {
+                    "<https://www.ogc.org/rules/prov/#prop-entity>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>": {
+                    "<https://www.ogc.org/rules/prov/#prop-generated>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#Activity-shape>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-wasStartedBy>": {
+                    "<https://www.ogc.org/rules/prov/#Bundle-shape>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-atLocation>": {
+                    "<https://www.ogc.org/rules/prov/#prop-alternateOf>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-agent>": {
+                    "<https://www.ogc.org/rules/prov/#Invalidation-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedStart>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Collection-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#End-shape>": {
+                    "<https://www.ogc.org/rules/prov/#prop-wasEndedBy>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>": {
                       "nodes": []
                     },
+                    "<https://www.ogc.org/rules/prov/#prop-wasInformedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#End-shape>": {
+                      "nodes": []
+                    },
                     "<https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#Bundle-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedUsage>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Usage-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-specializationOf>": {
-                      "nodes": []
-                    },
                     "<https://www.ogc.org/rules/prov/#Generation-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Entity-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadActivity>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadMember>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedRevision>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasAttributedTo>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Plan-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedStart>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasRevisionOf>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-agent>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadGeneration>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-activity>": {
@@ -2010,69 +2010,69 @@
                     "<https://www.ogc.org/rules/prov/#prop-hadPrimarySource>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasInformedBy>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadPlan>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedRevision>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#Entity-shape>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadGeneration>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-invalidated>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-generated>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasRevisionOf>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>": {
-                      "nodes": []
-                    },
-                    "<https://www.ogc.org/rules/prov/#prop-hadRole>": {
+                    "<https://www.ogc.org/rules/prov/#prop-specializationOf>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-wasAttributedTo>": {
+                    "<https://www.ogc.org/rules/prov/#prop-hadPlan>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-wasEndedBy>": {
+                    "<https://www.ogc.org/rules/prov/#prop-hadUsage>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-alternateOf>": {
+                    "<https://www.ogc.org/rules/prov/#Usage-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedEnd>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-influencer>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Collection-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-used>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#Start-shape>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-wasStartedBy>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-hadRole>": {
                       "nodes": []
                     },
                     "<https://www.ogc.org/rules/prov/#EmptyCollection-shape>": {
                       "nodes": []
                     },
-                    "<https://www.ogc.org/rules/prov/#prop-qualifiedEnd>": {
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedUsage>": {
+                      "nodes": []
+                    },
+                    "<https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadActivity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Plan-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-influencer>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Invalidation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadMember>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Start-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-entity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-used>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Activity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasStartedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-atLocation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-agent>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedStart>: *none*\n - Shape <https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Collection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#End-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Bundle-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Usage-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-specializationOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Generation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-activity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInformedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPlan>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedRevision>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Entity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-invalidated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-generated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasRevisionOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadRole>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAttributedTo>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasEndedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-alternateOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#EmptyCollection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedEnd>: *none*\n"
+                  "message": "Focus nodes for https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl:\n - Shape <https://www.ogc.org/rules/prov/#prop-invalidated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAssociation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-atLocation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-entity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-generated>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Activity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Bundle-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-alternateOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Invalidation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInvalidation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasEndedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedCommunication>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInformedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#End-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-actedOnBehalfOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Generation-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Entity-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDerivation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadActivity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadMember>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedRevision>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasGeneratedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAssociatedWith>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasAttributedTo>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Plan-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInvalidatedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedStart>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasQuotedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasRevisionOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-agent>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadGeneration>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-activity>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPrimarySource>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-specializationOf>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedQuotation>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadPlan>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Usage-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedEnd>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasDerivedFrom>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedAttribution>: *none*\n - Shape <https://www.ogc.org/rules/prov/#InstantaneousEvent-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-influencer>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Collection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedInfluence>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-used>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasInfluencedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#Start-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-wasStartedBy>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-hadRole>: *none*\n - Shape <https://www.ogc.org/rules/prov/#EmptyCollection-shape>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedUsage>: *none*\n - Shape <https://www.ogc.org/rules/prov/#prop-qualifiedDelegation>: *none*\n"
                 },
                 {
                   "op": "shacl-report",
@@ -2084,17 +2084,22 @@
                 {
                   "shaclFile": "_sources/core-ontology/shapes.shacl",
                   "focusNodes": {
-                    "rim:TextShape/sh:or/rdf:first": {
-                      "nodes": []
-                    },
-                    "rim:ConceptShape": {
-                      "nodes": []
-                    },
                     "rim:RegisterSpecificationShape": {
                       "nodes": []
                     },
                     "rim:TextShape": {
                       "nodes": []
+                    },
+                    "rim:ConceptShape": {
+                      "nodes": []
+                    },
+                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
+                    "rim:RegisterItemShape": {
+                      "nodes": [
+                        "ex:i"
+                      ]
                     },
                     "rim:RegisterItemClassShape": {
                       "nodes": [
@@ -2109,23 +2114,18 @@
                         "ex:a"
                       ]
                     },
-                    "rim:ConceptVersionShape": {
-                      "nodes": []
-                    },
-                    "rim:RegisterItemShape": {
-                      "nodes": [
-                        "ex:i"
-                      ]
-                    },
                     "rim:RegisterShape": {
                       "nodes": []
                     },
-                    "rim:TextShape/sh:or/rdf:rest/rdf:first": {
+                    "rim:ConceptVersionShape": {
+                      "nodes": []
+                    },
+                    "rim:TextShape/sh:or/rdf:first": {
                       "nodes": []
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n - Shape rim:ConceptShape: *none*\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:RegisterItemClassShape: ex:uc\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: ex:a\n - Shape rim:ConceptVersionShape: *none*\n - Shape rim:RegisterItemShape: ex:i\n - Shape rim:RegisterShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n"
+                  "message": "Focus nodes for _sources/core-ontology/shapes.shacl:\n - Shape rim:RegisterSpecificationShape: *none*\n - Shape rim:TextShape: *none*\n - Shape rim:ConceptShape: *none*\n - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape rim:RegisterItemShape: ex:i\n - Shape rim:RegisterItemClassShape: ex:uc\n - Shape rim:CommitmentShape: *none*\n - Shape rim:RegisterActionShape: ex:a\n - Shape rim:RegisterShape: *none*\n - Shape rim:ConceptVersionShape: *none*\n - Shape rim:TextShape/sh:or/rdf:first: *none*\n"
                 }
               ]
             }

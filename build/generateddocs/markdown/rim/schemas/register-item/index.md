@@ -1,7 +1,7 @@
 
-# Registered Item (Schema)
+# Register Item (Schema)
 
-`ogc.rim.schemas.registered-item` *v0.2*
+`ogc.rim.schemas.register-item` *v0.2*
 
 A REGISTER ITEM model with JSON/LD/RDF implementation as defined by ISO/FDIS 19135:2026. This provides a canonical schema for a register entry, that can be extended according the REGISTER ITEM CLASS defined for the register.
 
@@ -135,7 +135,7 @@ by IRI.
       "xsd": "http://www.w3.org/2001/XMLSchema#",
       "ex": "https://example.org/rim/"
     },
-    "https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/registered-item/context.jsonld"
+    "https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-item/context.jsonld"
   ],
   "id": "https://example.org/rim/i",
   "type": "RegisterItem",
@@ -244,7 +244,7 @@ ex:c a rim:Concept ;
 
 ```yaml
 $schema: https://json-schema.org/draft/2020-12/schema
-title: ISO 19135 Registered Item
+title: ISO 19135 Register Item
 description: 'A register item: the concrete record in a register''s content plane
   (ISO 19135:2026). Pins the model''s required core -- object identifier, item class,
   validity and publication status -- and nothing else, so that a sub-register can
@@ -469,7 +469,7 @@ x-jsonld-prefixes:
   skos: http://www.w3.org/2004/02/skos/core#
   xsd: http://www.w3.org/2001/XMLSchema#
 x-bblocks-metadata:
-  itemIdentifier: ogc.rim.schemas.registered-item
+  itemIdentifier: ogc.rim.schemas.register-item
   register: https://geonovum-labs.github.io/registered-item-model/build/register.json
   version: '0.2'
   dateOfLastChange: '2026-10-28'
@@ -478,8 +478,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/registered-item/schema.json)
-* JSON version: [schema.json](https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/registered-item/schema.yaml)
+* YAML version: [schema.yaml](https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-item/schema.json)
+* JSON version: [schema.json](https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-item/schema.yaml)
 
 
 # JSON-LD Context
@@ -670,7 +670,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/registered-item/context.jsonld)
+[context.jsonld](https://geonovum-labs.github.io/registered-item-model/build/annotated/rim/schemas/register-item/context.jsonld)
 
 
 # For developers
@@ -678,5 +678,5 @@ You can find the full JSON-LD context here:
 The source code for this Building Block can be found in the following repository:
 
 * URL: [https://github.com/Geonovum-labs/registered-item-model](https://github.com/Geonovum-labs/registered-item-model)
-* Path: `_sources/schemas/registered-item`
+* Path: `_sources/schemas/register-item`
 
