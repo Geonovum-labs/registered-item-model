@@ -1,5 +1,5 @@
 Validation report for ogc.model.registered-item.rim.concept-version - Concept Version
-Generated 2026-10-27T12:53:58.381730+00:00
+Generated 2026-10-28T15:08:19.696974+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
@@ -20,16 +20,16 @@ Validation result for _sources/core-ontology/shapes.shacl:
   
 Focus nodes for _sources/core-ontology/shapes.shacl:
  - Shape rim:RegisterSpecificationShape: *none*
- - Shape rim:TextShape: *none*
- - Shape rim:RegisterActionShape: *none*
- - Shape rim:RegisterItemShape: *none*
- - Shape rim:CommitmentShape: *none*
- - Shape rim:ConceptShape: ex:c
- - Shape rim:RegisterShape: *none*
- - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape rim:TextShape/sh:or/rdf:first: *none*
- - Shape rim:ConceptVersionShape: ex:cv
  - Shape rim:RegisterItemClassShape: *none*
+ - Shape rim:RegisterItemShape: *none*
+ - Shape rim:TextShape/sh:or/rdf:first: *none*
+ - Shape rim:RegisterShape: *none*
+ - Shape rim:RegisterActionShape: *none*
+ - Shape rim:ConceptShape: ex:c
+ - Shape rim:ConceptVersionShape: ex:cv
+ - Shape rim:TextShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape rim:TextShape: *none*
+ - Shape rim:CommitmentShape: *none*
 
 === End SHACL ===
 

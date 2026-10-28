@@ -7,7 +7,7 @@
       "xsd": "http://www.w3.org/2001/XMLSchema#",
       "ex": "https://example.org/rim/"
     },
-    "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-action/context.jsonld"
+    "https://geonovum-labs.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-action/context.jsonld"
   ],
   "id": "https://example.org/rim/a",
   "type": "RegisterAction",

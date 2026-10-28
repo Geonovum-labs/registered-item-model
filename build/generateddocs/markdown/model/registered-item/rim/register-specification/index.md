@@ -94,7 +94,7 @@ This block represents the documented governance layer. Most governance rules can
       "dct": "http://purl.org/dc/terms/",
       "ex": "https://example.org/rim/"
     },
-    "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-specification/context.jsonld"
+    "https://geonovum-labs.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-specification/context.jsonld"
   ],
   "id": "https://example.org/rim/s",
   "type": "RegisterSpecification",
@@ -125,11 +125,11 @@ ex:s a rim:RegisterSpecification ;
     dct:title "Units register specification" ;
     rim:definesSubstantiveChange "Any change to a unit's symbol, dimension or conversion factor is substantive; changes to its description are clarifying." ;
     rim:hasCommitment [ a rim:Commitment ;
-            dct:description "Object identifiers are never reassigned or deleted." ;
-            rim:commitmentCategory rim:persistenceCommitment ],
-        [ a rim:Commitment ;
             dct:description "Current and historic content are readable without authentication." ;
-            rim:commitmentCategory rim:accessCommitment ] .
+            rim:commitmentCategory rim:accessCommitment ],
+        [ a rim:Commitment ;
+            dct:description "Object identifiers are never reassigned or deleted." ;
+            rim:commitmentCategory rim:persistenceCommitment ] .
 
 
 ```
@@ -351,7 +351,7 @@ x-jsonld-prefixes:
   xsd: http://www.w3.org/2001/XMLSchema#
 x-bblocks-metadata:
   itemIdentifier: ogc.model.registered-item.rim.register-specification
-  register: https://nielshoffmann.github.io/registered-item-model/build/register.json
+  register: https://geonovum-labs.github.io/registered-item-model/build/register.json
   version: '0.2'
   dateOfLastChange: '2026-09-25'
 
@@ -359,8 +359,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-specification/schema.json)
-* JSON version: [schema.json](https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-specification/schema.yaml)
+* YAML version: [schema.yaml](https://geonovum-labs.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-specification/schema.json)
+* JSON version: [schema.json](https://geonovum-labs.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-specification/schema.yaml)
 
 
 # JSON-LD Context
@@ -553,13 +553,13 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-specification/context.jsonld)
+[context.jsonld](https://geonovum-labs.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-specification/context.jsonld)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/NielsHoffmann/registered-item-model](https://github.com/NielsHoffmann/registered-item-model)
+* URL: [https://github.com/Geonovum-labs/registered-item-model](https://github.com/Geonovum-labs/registered-item-model)
 * Path: `_sources/rim/register-specification`
 

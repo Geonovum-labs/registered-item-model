@@ -100,7 +100,7 @@ ISO 19135:2026 roles. The JSON-LD context maps every key onto `rim:` / `dct:` / 
       "xsd": "http://www.w3.org/2001/XMLSchema#",
       "ex": "https://example.org/rim/"
     },
-    "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register/context.jsonld"
+    "https://geonovum-labs.github.io/registered-item-model/build/annotated/model/registered-item/rim/register/context.jsonld"
   ],
   "id": "https://example.org/rim/r",
   "type": "Register",
@@ -397,7 +397,7 @@ x-jsonld-prefixes:
   xsd: http://www.w3.org/2001/XMLSchema#
 x-bblocks-metadata:
   itemIdentifier: ogc.model.registered-item.rim.register
-  register: https://nielshoffmann.github.io/registered-item-model/build/register.json
+  register: https://geonovum-labs.github.io/registered-item-model/build/register.json
   version: '0.2'
   dateOfLastChange: '2026-09-25'
 
@@ -405,8 +405,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register/schema.json)
-* JSON version: [schema.json](https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register/schema.yaml)
+* YAML version: [schema.yaml](https://geonovum-labs.github.io/registered-item-model/build/annotated/model/registered-item/rim/register/schema.json)
+* JSON version: [schema.json](https://geonovum-labs.github.io/registered-item-model/build/annotated/model/registered-item/rim/register/schema.yaml)
 
 
 # JSON-LD Context
@@ -599,13 +599,13 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register/context.jsonld)
+[context.jsonld](https://geonovum-labs.github.io/registered-item-model/build/annotated/model/registered-item/rim/register/context.jsonld)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/NielsHoffmann/registered-item-model](https://github.com/NielsHoffmann/registered-item-model)
+* URL: [https://github.com/Geonovum-labs/registered-item-model](https://github.com/Geonovum-labs/registered-item-model)
 * Path: `_sources/rim/register`
 

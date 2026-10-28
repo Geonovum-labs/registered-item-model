@@ -1,5 +1,5 @@
 {
-  "@context": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/registered-item/context.jsonld",
+  "@context": "https://geonovum-labs.github.io/registered-item-model/build/annotated/model/registered-item/rim/registered-item/context.jsonld",
   "id": "https://example.org/rim/i-ungoverned",
   "type": "RegisterItem",
   "objectIdentifier": "urn:uuid:55555555-5555-4555-8555-555555555555",
