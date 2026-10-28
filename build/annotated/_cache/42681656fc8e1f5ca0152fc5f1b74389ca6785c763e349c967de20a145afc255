@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="https://ogcincubator.github.io/bblocks-viewer/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OGC Building Blocks for STAC</title>
+  <meta name="description" content="These [Building Blocks](https://ogcincubator.github.io/bblocks-docs/) provide a validation and documentation wrapper over STAC and extension schemas, and aid in transparent re-use of STAC elements" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="OGC Building Blocks for STAC" />
+  <meta property="og:description" content="These [Building Blocks](https://ogcincubator.github.io/bblocks-docs/) provide a validation and documentation wrapper over STAC and extension schemas, and aid in transparent re-use of STAC elements" />
+  <meta property="og:url" content="https://ogcincubator.github.io/bblocks-stac/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="OGC Building Blocks for STAC" />
+  <meta name="twitter:description" content="These [Building Blocks](https://ogcincubator.github.io/bblocks-docs/) provide a validation and documentation wrapper over STAC and extension schemas, and aid in transparent re-use of STAC elements" />
+  <script src="https://ogcincubator.github.io/bblocks-stac/config.js"></script>
+  <script type="module" crossorigin src="https://ogcincubator.github.io/bblocks-viewer/assets/index.js"></script>
+  <link rel="stylesheet" href="https://ogcincubator.github.io/bblocks-viewer/assets/index.css">
+</head>
+<body>
+  <div id="app"></div>
+</body>
+</html>
